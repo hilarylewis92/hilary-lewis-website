@@ -12,6 +12,7 @@
   text-align: center;
 }
 
+/*hero*/
 .hero-background-image {
   height: 90vh;
   background: linear-gradient( rgba(255,255,255,.5),rgba(255,255,255,.5)), url('background.jpg');
@@ -22,7 +23,7 @@
 }
 
 .hero-text-landing {
-  padding: 15% 2%;
+  padding: 13% 2%;
   font-size: 40px;
   position: absolute;
   width: 40%;
@@ -33,50 +34,37 @@
   background-color: hsla(0, 0%, 100%, .8);
 }
 
-.recent-projects-title {
-  font-size: 40px;
+/*recent projects*/
+.recent-projects-section {
+  height: 90vh;
+  margin-top: 10vh;
 }
 
-.recent-projects {
+.recent-projects-title {
+  font-size: 35px;
+  padding: 20px;
+}
+
+.recent-projects-list {
   display: flex;
   width: 100vw;
 }
 
-.recent-projects-images {
-  width: 30vw;
-  height: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-.list-recent-projects {
+.single-project {
   margin: auto;
-}
-
-.recent-projects-title {
-  padding: 20px;
 }
 
 .project-title {
   font-size: 20px;
 }
 
-a {
-  color: #84A58E;
-  text-decoration: none;
+.project-image {
+  width: 30vw;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
-a:hover {
-  color: #FFCA61;
-}
-
-.view-more-projects{
-  font-size: 15px;
-  border: 2px solid;
-  padding: 10px;
-  border-radius: 50px;
-}
-
-.recent-projects-section {
-  height: 90vh;
-  margin-top: 10vh;
+/*view more button*/
+.view-more-section{
+  margin: 100px;
 }

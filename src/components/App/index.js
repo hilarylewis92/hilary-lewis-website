@@ -27,7 +27,6 @@ export default class App extends Component {
     }
   }
 
-
   render() {
     return (
       <div className='App'>
@@ -37,10 +36,10 @@ export default class App extends Component {
 
         <section className='hero-background-image'>
           <section className='hero-text-landing'>
-            Hilary Lewis
+            HILARY LEWIS
             <br />
             <br />
-            Front-end development
+            Front-End Development
             <br />
             Denver, Colorado
           </section>
@@ -51,19 +50,32 @@ export default class App extends Component {
             Recent Projects
           </h3>
 
-          <section className='recent-projects'>
+          <section className='recent-projects-list'>
             {this.state.recent.map(project => {
               return(
-                <div className='list-recent-projects'>
+                <div className='single-project'>
                   <a href={project.url}>
-                    <h4 className='project-title'>{project.title}</h4>
-                    <img className='recent-projects-images' src={require(project.src)} role='none' />
+                    <h4 className='project-title'>
+                      {project.title}
+                    </h4>
+
+                    <img
+                      className='project-image'
+                      src={require(project.src)}
+                      role='none'
+                    />
                   </a>
                 </div>
               )
             })}
           </section>
-          <Link to='/projects' className='view-more-projects'>View More &rarr; </Link>
+
+          <section className='view-more-section'>
+            <Link to='/projects'
+              className='view-more-projects button'>
+              View More Projects &rarr;
+            </Link>
+          </section>
         </section>
       </div>
     );

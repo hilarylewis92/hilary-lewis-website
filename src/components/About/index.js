@@ -108,10 +108,10 @@ export default class About extends Component {
         </section>
 
         <section className='resume-section'>
-          <Link to='/resume'
+          <Link to='/about/resume'
             activeClassName='active'
-            className='resume-link'>
-            View My Resume
+            className='resume-link button'>
+            View My Resume &rarr;
           </Link>
         </section>
       </section>
