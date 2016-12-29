@@ -11,6 +11,7 @@ a {
 
 a:hover {
   color: #FFCA61;
+  cursor: pointer;
 }
 
 /*buttons*/

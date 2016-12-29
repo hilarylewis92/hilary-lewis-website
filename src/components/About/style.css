@@ -6,6 +6,11 @@
   font-size: 20px;
 }
 
+.header {
+  padding: 40px 0 15px 0;
+  font-size: 25px;
+}
+
 /*hero*/
 .parallax-image {
     background: linear-gradient( rgba(255,255,255,.5),rgba(255,255,255,.5)), url('background.jpg');
@@ -33,6 +38,10 @@
   margin: auto;
 }
 
+.summary {
+  margin-bottom: 50px;
+}
+
 .title {
   padding: 200px 0 20px 0;
   text-align: center;
@@ -45,11 +54,6 @@
   height: 80vh;
   display: inline-block;
   float: left;
-}
-
-.experience-title {
-  padding: 40px 0 15px 0;
-  font-size: 25px;
 }
 
 .single-experience{
@@ -73,27 +77,36 @@
   float: right;
 }
 
-.skills-title {
-  padding: 40px 0 15px 0;
-  font-size: 25px;
-}
-
 .single-skill{
   padding-top: 18px;
 }
 
-/*resume*/
+/*about this website*/
+.about-website-section {
+  margin: 50px auto;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/*resume button*/
 .resume-section {
-  margin: 100px;
+  margin: 50px;
   text-align: center;
   display: block;
 }
 
+/*resume page*/
 .Resume {
   text-align: center;
+  color: #84A58E;
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+  line-height: 130%;
+  font-size: 20px;
 }
 
-.view-about-section {
+.view-about-section {  
   margin: 50px;
-  font-family: 'Lato', sans-serif;
 }

@@ -72,7 +72,7 @@ export default class About extends Component {
         </section>
 
         <section className='experience-list'>
-          <h3 className='experience-title'>
+          <h3 className='experience-header header'>
             EXPERIENCE
           </h3>
 
@@ -94,7 +94,7 @@ export default class About extends Component {
         </section>
 
         <section className="skills-list">
-          <h3 className='skills-title'>
+          <h3 className='skills-header header'>
             SKILLS
           </h3>
 
@@ -105,6 +105,16 @@ export default class About extends Component {
               </h5>
             )
           })}
+        </section>
+
+        <section className='about-website-section'>
+          <h4 className='about-website-header header'>
+            ABOUT THIS WEBSITE
+          </h4>
+
+          <p>
+            This website was built by me using React, React Router, and Create React App. I used CSS for styling and responsiveness. Fonts are served through <a src ='https://fonts.google.com/' className='underline'>Google Fonts</a> and photos are served through <a src ='https://unsplash.com/' className='underline'>Unspash</a>.
+          </p>
         </section>
 
         <section className='resume-section'>
