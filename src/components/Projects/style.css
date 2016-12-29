@@ -1,0 +1,45 @@
+.Projects {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+  color: #84A58E;
+  text-align: center;
+  border-top: 0.5px dotted #84A58E;
+}
+
+.recent-title-projects {
+  height: 85vh;
+}
+
+.recent-projects-title {
+  margin: 5vh 0 40px 0;
+  font-size: 40px;
+}
+
+.recent-projects {
+  display: flex;
+  width: 100vw;
+  padding-bottom: 50px;
+}
+
+.recent-projects-images {
+  width: 30vw;
+  height: 300px;
+}
+
+.list-recent-projects {
+  margin: auto;
+}
+
+.project-title {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+a {
+  color: #84A58E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFCA61;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "hilary-lewis-website",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "lodash": "^4.17.3",
+    "react-scripts": "0.8.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "^4.0.0-alpha.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

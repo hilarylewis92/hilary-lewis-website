@@ -1,0 +1,91 @@
+.About {
+  color: #84A58E;
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+}
+
+.title {
+  padding: 200px 0 20px 0;
+  text-align: center;
+  font-size: 40px;
+}
+
+.Resume {
+  text-align: center;
+}
+
+.parallax {
+    background: linear-gradient( rgba(255,255,255,.5),rgba(255,255,255,.5)), url('background.jpg');
+    height: 40vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 40px;
+    text-align: center;
+}
+
+.hilary-lewis-image {
+  position: absolute;;
+  left: 42%;
+  top: 30vh;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.about {
+  width: 60%;
+  margin: auto;
+}
+
+.experience {
+  padding: 30px 0 20px 0;
+  font-size: 25px;
+}
+
+.experience-list {
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
+
+.single-experience{
+  padding: 25px 0;
+  border-bottom: 1px solid;
+}
+
+.position {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.company, .dates {
+  font-size: 15px;
+}
+
+.skills {
+  padding: 30px 0 20px 0;
+  font-size: 25px;
+}
+
+.skill-list{
+  position: absolute;
+  right: 0;
+  height: 100vh;
+}
+
+.single-skill{
+  line-height: 180%;
+  font-size: 20px;
+}
+
+.resume-link {
+  position: absolute;
+  left: 43%;
+  margin-top: 50px;
+  font-size: 15px;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 50px;
+}
