@@ -6,8 +6,8 @@
   font-size: 20px;
 }
 
-.header {
-  padding: 40px 0 15px 0;
+.heading {
+  padding: 40px 0 10px 0;
   font-size: 25px;
 }
 
@@ -38,26 +38,24 @@
   margin: auto;
 }
 
-.summary {
-  margin-bottom: 50px;
-}
-
 .title {
-  padding: 200px 0 20px 0;
+  padding: 150px 0 20px 0;
   text-align: center;
   font-size: 40px;
+}
+
+.summary {
+  margin-bottom: 50px;
 }
 
 /*experience*/
 .experience-list {
   width: 70%;
-  height: 80vh;
-  display: inline-block;
   float: left;
 }
 
 .single-experience{
-  padding: 25px 0;
+  padding: 20px 0;
   width: 90%;
   border-bottom: 1px solid;
 }
@@ -78,12 +76,17 @@
 }
 
 .single-skill{
-  padding-top: 18px;
+  padding-top: 20px;
 }
 
 /*about this website*/
 .about-website-section {
   margin: 50px auto;
+}
+
+.about-website-header {
+  padding-bottom: 20px;
+
 }
 
 .underline {
@@ -103,10 +106,8 @@
   color: #84A58E;
   letter-spacing: 2px;
   font-family: 'Lato', sans-serif;
-  line-height: 130%;
-  font-size: 20px;
 }
 
-.view-about-section {  
+.view-about-section {
   margin: 50px;
 }

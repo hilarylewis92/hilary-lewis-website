@@ -5,14 +5,6 @@
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
-.link {
-  color: #84A58E;
-  text-decoration: none;
-}
-
-.link:hover {
-  color: #FFCA61;
-}
 
 .right {
   float: right;
@@ -20,8 +12,4 @@
 
 .middle-nav {
   margin: 0 20px;
-}
-
-.active {
-  color: #FFCA61;
 }

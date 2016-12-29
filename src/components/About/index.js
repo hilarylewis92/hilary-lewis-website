@@ -17,8 +17,7 @@ export default class About extends Component {
         'CSS/SASS',
         'HTML',
         'Redux',
-        'Git',
-        'GitHub'
+        'Git/GitHub'
       ],
       experience: [
         {
@@ -72,7 +71,7 @@ export default class About extends Component {
         </section>
 
         <section className='experience-list'>
-          <h3 className='experience-header header'>
+          <h3 className='experience-heading heading'>
             EXPERIENCE
           </h3>
 
@@ -94,7 +93,7 @@ export default class About extends Component {
         </section>
 
         <section className="skills-list">
-          <h3 className='skills-header header'>
+          <h3 className='skills-heading heading'>
             SKILLS
           </h3>
 
@@ -108,7 +107,7 @@ export default class About extends Component {
         </section>
 
         <section className='about-website-section'>
-          <h4 className='about-website-header header'>
+          <h4 className='about-website-heading heading'>
             ABOUT THIS WEBSITE
           </h4>
 
