@@ -1,15 +1,16 @@
 .Header {
-  margin: 20px 20px;
+  margin: 30px;
   text-align: left;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
 
+
 .right {
   float: right;
 }
 
 .middle-nav {
-  margin: 0 20px;
+  margin: 0 30px;
 }

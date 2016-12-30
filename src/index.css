@@ -1,7 +1,6 @@
 * {
   font-family: 'Roboto', sans-serif;
-  /*background: #F2F2F2;*/
-  background: white;
+  background: #eaf0ec;
 }
 
 /*links*/
@@ -11,12 +10,12 @@ a {
 }
 
 a:hover {
-  color: #FFCA61;
+  color: #222f26;
   cursor: pointer;
 }
 
 .active {
-  color: #FFCA61;
+  color: #222f26;
 }
 
 /*buttons*/

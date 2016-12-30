@@ -10,6 +10,7 @@
   letter-spacing: 2px;
   color: #84A58E;
   text-align: center;
+  font-size: 20px;
 }
 
 /*hero*/
@@ -20,11 +21,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  box-shadow: 0 0 10px #222f26;
 }
 
 .hero-text-landing {
-  color: black;
-  text-shadow: 1px 1px rgba(0,0,0,0.7);
+  color: #222f26;
+  text-shadow: 1px 1px gray;
   padding: 32% 2% 0 2%;
   font-size: 45px;
   position: absolute;
@@ -32,7 +34,7 @@
   left: 28%;
   top: 0;
   bottom: 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px gray;
   background-color: hsla(0, 0%, 100%, .2);
 }
 
@@ -63,7 +65,7 @@
 .project-image {
   width: 30vw;
   height: 300px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px #222f26;
 }
 
 /*view more button*/
