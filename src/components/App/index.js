@@ -38,7 +38,6 @@ export default class App extends Component {
           <section className='hero-text-landing'>
             HILARY LEWIS
             <br />
-            <br />
             Front-End Development
             <br />
             Denver, Colorado

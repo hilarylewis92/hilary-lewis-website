@@ -1,10 +1,6 @@
 .Footer {
-  display: flex;
-  height: 20vh;
-  width: 100%;
-  background-color: #84A58E;
-  margin: auto;
-
+  height: 200px;
+  width: 100vw;
 }
 
 .single-contact-icon {
@@ -12,7 +8,6 @@
 }
 
 .single-contact {
-  margin: auto;
-  background-color: #84A58E;
-
+  display: inline-block;
+  margin: 70px 30px 30px 30px;
 }

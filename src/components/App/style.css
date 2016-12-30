@@ -15,7 +15,7 @@
 /*hero*/
 .hero-background-image {
   height: 90vh;
-  background: linear-gradient( rgba(255,255,255,.5),rgba(255,255,255,.5)), url('background.jpg');
+  background: linear-gradient( rgba(255,255,255,.2),rgba(255,255,255,.2)), url('background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,15 +23,17 @@
 }
 
 .hero-text-landing {
-  padding: 13% 2%;
-  font-size: 40px;
+  color: black;
+  text-shadow: 1px 1px rgba(0,0,0,0.7);
+  padding: 32% 2% 0 2%;
+  font-size: 45px;
   position: absolute;
   width: 40%;
   left: 28%;
   top: 0;
   bottom: 0;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  background-color: hsla(0, 0%, 100%, .8);
+  background-color: hsla(0, 0%, 100%, .2);
 }
 
 /*recent projects*/
