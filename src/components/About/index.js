@@ -4,6 +4,8 @@ import { map } from 'lodash';
 
 import './style.css';
 import Header from '../Header'
+import Footer from '../Footer'
+
 
 export default class About extends Component {
   constructor() {
@@ -116,14 +118,18 @@ export default class About extends Component {
           </p>
         </section>
 
-        <section className='resume-section'>
-          <Link to='/about/resume'
-            activeClassName='active'
-            className='resume-link button'>
-            View My Resume &rarr;
-          </Link>
+          <section className='resume-section'>
+            <Link to='/about/resume'
+              activeClassName='active'
+              className='resume-link button'>
+              View My Resume &rarr;
+            </Link>
+          </section>
         </section>
-      </section>
+
+        <section className='footer-section'>
+          <Footer />
+        </section>
       </div>
     );
   }

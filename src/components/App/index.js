@@ -77,6 +77,10 @@ export default class App extends Component {
             </Link>
           </section>
         </section>
+
+        <section className='footer-section'>
+          <Footer />
+        </section>
       </div>
     );
   }
