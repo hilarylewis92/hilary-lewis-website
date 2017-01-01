@@ -1,4 +1,27 @@
 * {
   font-family: 'Roboto', sans-serif;
-  background: #F2F2F2;
+  background: #f2f2f2;
+}
+
+/*links*/
+a {
+  color: #84A58E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #222f26;
+  cursor: pointer;
+}
+
+.active {
+  color: #222f26;
+}
+
+/*buttons*/
+.button{
+  font-size: 15px;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 50px;
 }

@@ -1,3 +1,24 @@
 .Contact {
-  margin: 2vh 2vw;
+  height: 90vh;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+  color: #84A58E;
+  text-align: center;
+  font-size: 20px;
+  line-height: 180%;
+}
+
+.contact-section {
+  margin: 10vh auto;
+  width: 50vw;
+}
+
+.contact-title {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.contact-email {
+  font-size: 30px;
+  text-decoration: underline;
 }

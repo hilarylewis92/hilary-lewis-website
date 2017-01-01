@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './style.css';
 import Header from '../Header'
+import Footer from '../Footer'
+
 
 export default class Projects extends Component {
   constructor() {
@@ -45,6 +47,10 @@ export default class Projects extends Component {
               )
             })}
           </section>
+        </section>
+
+        <section className='footer-section'>
+          <Footer />
         </section>
       </div>
     );

@@ -3,7 +3,7 @@
   letter-spacing: 2px;
   color: #84A58E;
   text-align: center;
-  border-top: 0.5px dotted #84A58E;
+  font-size: 20px;
 }
 
 .recent-title-projects {
@@ -24,6 +24,7 @@
 .recent-projects-images {
   width: 30vw;
   height: 300px;
+  box-shadow: 0 0 10px #222f26;
 }
 
 .list-recent-projects {
@@ -35,11 +36,11 @@
   padding-bottom: 10px;
 }
 
-a {
+/*a {
   color: #84A58E;
   text-decoration: none;
 }
 
 a:hover {
   color: #FFCA61;
-}
+}*/

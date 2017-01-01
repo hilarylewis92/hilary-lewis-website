@@ -1,27 +1,16 @@
 .Header {
-  margin: 20px 20px;
+  margin: 20px;
   text-align: left;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
 }
-.link {
-  color: #84A58E;
-  text-decoration: none;
-}
 
-.link:hover {
-  color: #FFCA61;
-}
 
 .right {
   float: right;
 }
 
 .middle-nav {
-  margin: 0 20px;
-}
-
-.active {
-  color: #FFCA61;
+  margin: 0 30px;
 }
