@@ -114,7 +114,7 @@ export default class About extends Component {
           </h4>
 
           <p>
-            This website was built by me using React, React Router, and Create React App. I used CSS for styling and responsiveness. Fonts are served through <a src ='https://fonts.google.com/' className='underline'>Google Fonts</a> and photos are served through <a src ='https://unsplash.com/' className='underline'>Unspash</a>.
+            This website was built by me using React, React Router, and Create React App. I used CSS for styling and responsiveness. Fonts are served through <a href ='https://fonts.google.com/' className='underline'>Google Fonts</a> and photos are served through <a href ='https://unsplash.com/' className='underline'>Unsplash</a>.
           </p>
         </section>
 
