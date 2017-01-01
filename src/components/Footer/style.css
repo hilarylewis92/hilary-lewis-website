@@ -1,5 +1,5 @@
 .Footer {
-  height: 200px;
+  height: 250px;
   width: 100vw;
   color: #84A58E;
   text-align: center;
@@ -9,12 +9,51 @@
   font-size: 15px;
 }
 
-
-.single-contact-icon {
-  height: 40px;
-}
-
 .single-contact {
   display: inline-block;
   margin: 70px 30px 30px 30px;
+}
+
+.mail {
+  width: 100px;
+  height: 100px;
+  display:block;
+  background: url('./images/mail.png') no-repeat;
+}
+
+.mail:hover {
+  background-image: url('./images/mail-hover.png');
+}
+
+.linkedin {
+  width: 100px;
+  height: 100px;
+  display:block;
+  background: url('./images/linkedin.png') no-repeat;
+}
+
+.linkedin:hover {
+  background-image: url('./images/linkedin-hover.png');
+}
+
+.github {
+  width: 100px;
+  height: 100px;
+  display:block;
+  background: url('./images/github.png') no-repeat;
+}
+
+.github:hover {
+  background-image: url('./images/github-hover.png');
+}
+
+.twitter {
+  width: 100px;
+  height: 100px;
+  display:block;
+  background: url('./images/twitter.png') no-repeat;
+}
+
+.twitter:hover {
+  background-image: url('./images/twitter-hover.png');
 }
