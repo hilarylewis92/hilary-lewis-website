@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 import { map } from 'lodash';
+import { TweenMax } from 'gsap'
 
 import './style.css';
 import Header from '../Header'
@@ -27,6 +28,14 @@ export default class App extends Component {
     }
   }
 
+  componentDidMount() {
+    this.gsapHeroAnimation()
+  }
+
+  gsapHeroAnimation() {
+    TweenMax.to('.hero-text-landing', 1.5, {bottom: 0}, {opacity: 1});
+  }
+
   render() {
     return (
       <div className='App'>
@@ -38,7 +47,7 @@ export default class App extends Component {
           <section className='hero-text-landing'>
             HILARY LEWIS
             <br />
-            Front-End Development
+            Front-End Developer
             <br />
             Denver, Colorado
           </section>

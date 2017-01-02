@@ -7,13 +7,14 @@
 }
 
 .heading {
+  text-shadow: 0.5px 0.5px #84A58E;
   padding: 40px 0 10px 0;
   font-size: 25px;
 }
 
 /*hero*/
 .parallax-image {
-  background: linear-gradient( rgba(255,255,255,.3),rgba(255,255,255,.3)), url('background.jpg');
+  background: url('background.png');
   height: 40vh;
   background-attachment: fixed;
   background-position: bottom;
@@ -21,6 +22,7 @@
   background-size: cover;
   font-size: 40px;
   text-align: center;
+  box-shadow: 0 0 5px #84A58E;
 }
 
 .hilary-lewis-image {
@@ -29,7 +31,7 @@
   top: 30vh;
   height: 250px;
   border-radius: 50%;
-  box-shadow: 0 0 5px #222f26;
+  box-shadow: 0 0 5px #84A58E;
 }
 
 /*about summary*/
@@ -41,7 +43,8 @@
 .title {
   padding: 150px 0 20px 0;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
+
 }
 
 .summary {

@@ -10,32 +10,33 @@
   letter-spacing: 2px;
   color: #84A58E;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /*hero*/
 .hero-background-image {
   height: 90vh;
-  background: linear-gradient( rgba(255,255,255,.3),rgba(255,255,255,.3)), url('background.jpg');
+  background: url('background.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  box-shadow: 0 0 5px #222f26;
+  box-shadow: 0 0 5px #84A58E;
 }
 
 .hero-text-landing {
   color: #222f26;
-  text-shadow: 1px 1px gray;
-  padding: 32% 2% 0 2%;
-  font-size: 45px;
+  text-shadow: 1px 1px #84A58E;
+  padding: 3% 3% 5% 13%;
+  font-size: 50px;
   position: absolute;
   width: 40%;
   left: 28%;
-  top: 0;
-  bottom: 0;
-  box-shadow: 0 0 10px gray;
-  background-color: hsla(0, 0%, 100%, .2);
+  opacity: 0%;
+  /*top: 0;
+  bottom: 0;*/
+  /*box-shadow: 0 0 10px gray;*/
+  background-color: hsla(0, 0%, 100%, 0);
 }
 
 /*recent projects*/
@@ -45,7 +46,7 @@
 }
 
 .recent-projects-title {
-  font-size: 35px;
+  font-size: 45px;
   padding: 20px;
 }
 
@@ -70,5 +71,5 @@
 
 /*view more button*/
 .view-more-section{
-  margin: 100px;
+  margin: 70px;
 }

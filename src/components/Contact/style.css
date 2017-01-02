@@ -4,18 +4,18 @@
   letter-spacing: 2px;
   color: #84A58E;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 180%;
 }
 
 .contact-section {
-  margin: 10vh auto;
-  width: 50vw;
+  margin: 5vh auto;
+  width: 60vw;
 }
 
 .contact-title {
-  font-size: 40px;
-  margin: 20px;
+  font-size: 45px;
+  margin: 10px;
 }
 
 .contact-email {

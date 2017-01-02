@@ -3,44 +3,35 @@
   letter-spacing: 2px;
   color: #84A58E;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
+
 }
 
-.recent-title-projects {
-  height: 85vh;
+/*list of projects*/
+.projects-title {
+  margin: 10vh 0 40px 0;
+  font-size: 45px;
 }
 
-.recent-projects-title {
-  margin: 5vh 0 40px 0;
-  font-size: 40px;
-}
-
-.recent-projects {
+.projects-list {
   display: flex;
-  width: 100vw;
+  flex-wrap: wrap;
   padding-bottom: 50px;
 }
 
-.recent-projects-images {
+/*single projects*/
+.single-project {
+  margin: auto;
+  padding: 30px 0;
+}
+
+.project-image {
   width: 30vw;
   height: 300px;
   box-shadow: 0 0 10px #222f26;
 }
 
-.list-recent-projects {
-  margin: auto;
-}
-
 .project-title {
-  font-size: 20px;
+  font-size: 25px;
   padding-bottom: 10px;
 }
-
-/*a {
-  color: #84A58E;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #FFCA61;
-}*/
