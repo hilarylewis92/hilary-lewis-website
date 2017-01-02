@@ -4,12 +4,12 @@
   letter-spacing: 2px;
   color: #84A58E;
   text-align: center;
-  font-size: 25px;
   line-height: 180%;
 }
 
 .contact-section {
-  margin: 5vh auto;
+  font-size: 25px;
+  margin: 10vh auto;
   width: 60vw;
 }
 

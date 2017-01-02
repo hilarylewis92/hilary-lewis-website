@@ -34,7 +34,7 @@ export default class Header extends Component {
         />
 
         <div className='menu'>
-          <ul>
+          {this.state.open ? <ul>
             <Link to="/"
               activeClassName="active"
               className='link'>
@@ -59,6 +59,7 @@ export default class Header extends Component {
               <li>Contact</li>
             </Link>
           </ul>
+        :null }
         </div>
       </div>
     );
