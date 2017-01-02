@@ -13,12 +13,11 @@ export default class Header extends Component {
     }
   }
 
-    handleClick() {
-      this.setState({
-          open: !this.state.open
-      })
-    }
-
+  handleClick() {
+    this.setState({
+        open: !this.state.open
+    })
+  }
 
   render() {
     return (
@@ -26,30 +25,37 @@ export default class Header extends Component {
         <Hamburger
           isOpen={this.state.open}
           menuClicked={this.handleClick.bind(this)}
-          width={18}
-          height={15}
-          strokeWidth={1}
+          width={25}
+          height={20}
+          strokeWidth={3}
           rotate={0}
-          color='black'
-          borderRadius={0}
+          color='#84A58E'
           animationDuration={0.5}
         />
 
         <div className='menu'>
           <ul>
-            <Link to="/" activeClassName="active" className='link'>
-              Hilary
+            <Link to="/"
+              activeClassName="active"
+              className='link'>
+              <li>Home</li>
             </Link>
 
-            <Link to="/projects" activeClassName="active" className='link right'>
+            <Link to="/projects"
+              activeClassName="active"
+              className='link right'>
               <li>Projects</li>
             </Link>
 
-            <Link to="/about" activeClassName="active" className='link middle-nav right'>
+            <Link to="/about"
+              activeClassName="active"
+              className='link middle-nav right'>
               <li>About</li>
             </Link>
 
-            <Link to="/contact" activeClassName="active" className='link right'>
+            <Link to="/contact"
+              activeClassName="active"
+              className='link right'>
               <li>Contact</li>
             </Link>
           </ul>

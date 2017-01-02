@@ -1,13 +1,14 @@
 import React from 'react'
 
 export default function Hamburger(props) {
-	const width = `${props.width || 36}px`,
-	height = `${props.height || 30}px`,
-	halfHeight = `${parseInt(height.replace('px', '')) / 2}px`,
-	isOpen = props.isOpen || false,
-	strokeWidth = props.strokeWidth || 2,
-  halfStrokeWidth = `-${strokeWidth / 2}px`,
-  animationDuration = props.animationDuration || '0.4'
+	const
+    width = `${props.width}px`,
+  	height = `${props.height}px`,
+  	halfHeight = `${parseInt(height.replace('px', '')) / 2}px`,
+  	isOpen = props.isOpen,
+  	strokeWidth = props.strokeWidth,
+    halfStrokeWidth = `-${strokeWidth / 2}px`,
+    animationDuration = props.animationDuration
 
 	const getTransformValue = (isOpen, defaultPos, rotateVal) => (
 		`translate3d(0,${isOpen ? halfHeight : defaultPos},0)
@@ -19,16 +20,15 @@ export default function Hamburger(props) {
 			width,
 			height,
 			position: 'relative',
-			transform: `rotate(${props.rotate || 0}deg)`
+			transform: `rotate(${props.rotate}deg)`
 		},
 		lineBase: {
 			display: 'block',
 			height: `${strokeWidth}px`,
 			width: '100%',
-			background: props.color || '#000',
+			background: props.color,
 			transitionTimingFunction: 'ease',
 			transitionDuration : `${animationDuration}s`,
-			borderRadius: `${props.borderRadius || 0}px`,
 			transformOrigin: 'center',
 			position: 'absolute'
 		},
@@ -50,7 +50,10 @@ export default function Hamburger(props) {
 	}
 
 	return (
-		<div style={styles.container} onClick={props.menuClicked}>
+		<div style={styles.container}
+      onClick={props.menuClicked}
+      className='hamburger-menu'>
+
 		  <span style={
         Object.assign({},
         styles.lineBase,
