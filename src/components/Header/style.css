@@ -14,7 +14,7 @@
   position: absolute;
   text-align: center;
   left: 0;
-  margin-top: 10px;
+  margin: 10px 2px;
 }
 
 .menu ul {
@@ -25,7 +25,7 @@
 .menu li {
   display: block;
   padding: 15px 0 15px 0;
-  border-bottom: #84A58E 1px solid;
+  border: #84A58E 1px solid;
 }
 
 .menu li:hover {

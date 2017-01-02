@@ -14,7 +14,7 @@
 
 /*hero*/
 .parallax-image {
-  background: url('background.png');
+  background: linear-gradient(to top, transparent 0%, white 150%), url('background.jpg');
   height: 40vh;
   background-attachment: fixed;
   background-position: bottom;
@@ -22,7 +22,7 @@
   background-size: cover;
   font-size: 40px;
   text-align: center;
-  box-shadow: 0 0 5px #84A58E;
+  /*box-shadow: 0 0 5px #84A58E;*/
 }
 
 .hilary-lewis-image {
