@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router'
 
-import './style.css';
+import './style.css'
 import About from '../About'
 
 export default class Resume extends Component {
@@ -22,6 +22,6 @@ export default class Resume extends Component {
           </Link>
         </section>
       </div>
-    );
+    )
   }
 }

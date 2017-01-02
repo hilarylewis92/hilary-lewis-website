@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router'
-import { map } from 'lodash';
+import { map } from 'lodash'
 
-import './style.css';
+import './style.css'
 import Header from '../Header'
 import Footer from '../Footer'
 
@@ -57,25 +57,25 @@ export default class About extends Component {
           role='none'
         />
 
-      <section className='about-me'>
-        <h3 className='title'>
-          About Me
-        </h3>
-
-        <section className="summary">
-          <p className="summary-paragraph">
-            As a creative-minded front-end developer, I value using both my left and right brain. I enjoy using my technical skills to solve challenging problems and write efficient code while also using my creative side to design clean and unique user interface on applications and websites.
-          </p>
-          <br />
-          <p className="summary-paragraph">
-            As a lifelong learner, I am always looking to add useful skills. Whether it's becoming a front-end web developer, math teacher, yoga instructor, or coaching soccer, learning is one of my most rewarding passions.
-          </p>
-        </section>
-
-        <section className='experience-list'>
-          <h3 className='experience-heading heading'>
-            EXPERIENCE
+        <section className='about-me'>
+          <h3 className='title'>
+            About Me
           </h3>
+
+          <section className="summary">
+            <p className="summary-paragraph">
+              As a creative-minded front-end developer, I value using both my left and right brain. I enjoy using my technical skills to solve challenging problems and write efficient code while also using my creative side to design clean and unique user interface on applications and websites.
+            </p>
+            <br />
+            <p className="summary-paragraph">
+              As a lifelong learner, I am always looking to add useful skills. Whether it's becoming a front-end web developer, math teacher, yoga instructor, or coaching soccer, learning is one of my most rewarding passions.
+            </p>
+          </section>
+
+          <section className='experience-list'>
+            <h3 className='experience-heading heading'>
+              EXPERIENCE
+            </h3>
 
           {this.state.experience.map(item => {
             return(
@@ -83,9 +83,11 @@ export default class About extends Component {
                 <h5 className='position'>
                   {item.position}
                 </h5>
+
                 <h6 className='company'>
                   {item.company}
                 </h6>
+
                 <p className='dates'>
                   {item.dates}
                 </p>
@@ -114,7 +116,24 @@ export default class About extends Component {
           </h4>
 
           <p>
-            This website was built by me using React, React Router, and Create React App. I used CSS for styling and responsiveness. Fonts are served through <a href ='https://fonts.google.com/' className='underline'>Google Fonts</a> and photos are served through <a href ='https://unsplash.com/' className='underline'>Unsplash</a>.
+            This website was built by me using <a href ='https://facebook.github.io/react/'
+              className='underline'>
+              React
+            </a>, <a href ='https://github.com/ReactTraining/react-router/tree/master/docs'
+               className='underline'>
+               React Router
+            </a>, and <a href ='https://github.com/facebookincubator/create-react-app'
+               className='underline'>
+               Create React App
+            </a>.
+
+            I used CSS for styling and responsiveness. Fonts are served through <a href ='https://fonts.google.com/'
+               className='underline'>
+               Google Fonts
+            </a> and photos are served through <a href ='https://unsplash.com/'
+               className='underline'>
+               Unsplash
+            </a>.
           </p>
         </section>
 
@@ -131,6 +150,6 @@ export default class About extends Component {
           <Footer />
         </section>
       </div>
-    );
+    )
   }
 }

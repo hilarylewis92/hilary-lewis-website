@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router'
 
 import Hamburger from './Hamburger'
 import Dropdown from './Dropdown'
 
-import './style.css';
+import './style.css'
 
 export default class Header extends Component {
   constructor() {
@@ -42,6 +42,6 @@ export default class Header extends Component {
         : null }
         </div>
       </div>
-    );
+    )
   }
 }
