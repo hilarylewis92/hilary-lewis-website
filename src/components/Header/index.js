@@ -59,7 +59,7 @@ export default class Header extends Component {
               <li>Contact</li>
             </Link>
           </ul>
-        :null }
+        : null }
         </div>
       </div>
     );

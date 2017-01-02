@@ -27,7 +27,7 @@ export default function Hamburger(props) {
 			height: `${strokeWidth}px`,
 			width: '100%',
 			background: props.color,
-			transitionTimingFunction: 'ease',
+			transitionTimingFunction: 'ease-in-out',
 			transitionDuration : `${animationDuration}s`,
 			transformOrigin: 'center',
 			position: 'absolute'
