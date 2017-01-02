@@ -28,7 +28,8 @@
 .project-image {
   width: 30vw;
   height: 300px;
-  box-shadow: 0 0 10px #222f26;
+  box-shadow: 0 0 5px #84A58E;
+
 }
 
 .project-title {
