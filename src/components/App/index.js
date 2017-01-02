@@ -39,10 +39,7 @@ export default class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div className="header">
-          <Header />
-        </div>
-
+        <Header />
         <section className='hero-background-image'>
           <section className='hero-text-landing'>
             HILARY LEWIS

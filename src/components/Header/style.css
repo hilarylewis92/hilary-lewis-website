@@ -1,16 +1,55 @@
 .Header {
-  margin: 20px;
-  text-align: left;
+  margin: 10px;
+  text-align: right;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
 }
 
-
-.right {
-  float: right;
+.menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 20px;
+  width: 30%;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  margin-top: 10px;
 }
 
-.middle-nav {
-  margin: 0 30px;
+.menu ul {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+.menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #84A58E 1px solid;
+}
+
+.menu li:hover {
+  display: block;
+  background: #84A58E;
+  padding: 15px 0 15px 0;
+  border-bottom: #222f26 1px solid;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color:#fff;
+}
+
+.menu ul li a:hover {
+  text-decoration: none;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu a:hover{
+  text-decoration: none;
+  color: white;
 }
