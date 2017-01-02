@@ -68,7 +68,7 @@ export default class About extends Component {
           </p>
           <br />
           <p className="summary-paragraph">
-            As a lifelong learner, I am always looking to add useful skills. Whether it's becoming a web developer, math teacher, yoga instructor, or coaching soccer, learning is one of my most rewarding passions.
+            As a lifelong learner, I am always looking to add useful skills. Whether it's becoming a front-end web developer, math teacher, yoga instructor, or coaching soccer, learning is one of my most rewarding passions.
           </p>
         </section>
 

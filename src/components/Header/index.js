@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 
 import Hamburger from './Hamburger'
+import Dropdown from './Dropdown'
 
 import './style.css';
 
@@ -34,30 +35,9 @@ export default class Header extends Component {
         />
 
         <div className='menu'>
-          {this.state.open ? <ul>
-            <Link to="/"
-              activeClassName="active"
-              className='link'>
-              <li>Home</li>
-            </Link>
-
-            <Link to="/projects"
-              activeClassName="active"
-              className='link right'>
-              <li>Projects</li>
-            </Link>
-
-            <Link to="/about"
-              activeClassName="active"
-              className='link middle-nav right'>
-              <li>About</li>
-            </Link>
-
-            <Link to="/contact"
-              activeClassName="active"
-              className='link right'>
-              <li>Contact</li>
-            </Link>
+          {this.state.open ?
+          <ul>
+            <Dropdown />
           </ul>
         : null }
         </div>
