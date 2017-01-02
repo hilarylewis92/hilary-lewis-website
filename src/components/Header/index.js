@@ -1,34 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 
+import Hamburger from './Hamburger'
+
 import './style.css';
 
 export default class Header extends Component {
-  // constructor() {
-  //   super()
-  //   this.state = {
-  //     open: false;
-  //   }
-  //
-  //   handleClick() {
-  //     this.setState({
-  //         open: !this.state.open
-  //     })
-  //   }
+  constructor() {
+    super()
+    this.state = {
+      open: false
+    }
+  }
 
+    handleClick() {
+      this.setState({
+          open: !this.state.open
+      })
+    }
 
 
   render() {
     return (
       <div role="nav" className='Header'>
-        <div className='hamburger-cross'>
-          <button className="hamburger">
-            &#9776;
-          </button>
-          <button className="cross">
-            &#735;
-          </button>
-        </div>
+        <Hamburger
+          isOpen={this.state.open}
+          menuClicked={this.handleClick.bind(this)}
+          width={18}
+          height={15}
+          strokeWidth={1}
+          rotate={0}
+          color='black'
+          borderRadius={0}
+          animationDuration={0.5}
+        />
 
         <div className='menu'>
           <ul>
