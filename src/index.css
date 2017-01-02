@@ -7,20 +7,21 @@
 a {
   color: #84A58E;
   text-decoration: none;
+  transition: 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #222f26;
+  color: #FFCA61;
   cursor: pointer;
 }
 
 .active {
-  color: #222f26;
+  color: #FFCA61;
 }
 
 /*buttons*/
 .button{
-  font-size: 15px;
+  font-size: 20px;
   border: 2px solid;
   padding: 10px;
   border-radius: 50px;

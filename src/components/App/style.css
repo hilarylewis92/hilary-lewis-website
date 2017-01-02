@@ -10,7 +10,7 @@
   letter-spacing: 2px;
   color: #84A58E;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /*hero*/
@@ -27,8 +27,8 @@
 .hero-text-landing {
   color: #222f26;
   text-shadow: 1px 1px gray;
-  padding: 32% 2% 0 2%;
-  font-size: 45px;
+  padding: 30% 2% 0 2%;
+  font-size: 50px;
   position: absolute;
   width: 40%;
   left: 28%;
@@ -45,7 +45,7 @@
 }
 
 .recent-projects-title {
-  font-size: 35px;
+  font-size: 50px;
   padding: 20px;
 }
 
@@ -70,5 +70,5 @@
 
 /*view more button*/
 .view-more-section{
-  margin: 100px;
+  margin: 70px;
 }
