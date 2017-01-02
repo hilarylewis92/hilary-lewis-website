@@ -26,10 +26,10 @@
 .hero-text-landing {
   color: #222f26;
   text-shadow: 1px 1px #84A58E;
-  padding: 3% 3% 3% 13%;
-  font-size: 50px;
+  padding: 3% 3% 3% 8%;
+  font-size: 65px;
   position: absolute;
-  width: 40%;
+  width: 50%;
   left: 28%;
   background-color: hsla(0, 0%, 100%, 0);
 }
