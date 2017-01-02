@@ -28,7 +28,7 @@ export default class Contact extends Component {
           <br />
           <br />
           <p>
-            You can also reach me though social media below.
+            You can also reach me through any social media below.
           </p>
         </section>
 

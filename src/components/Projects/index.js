@@ -22,12 +22,12 @@ export default class Projects extends Component {
         {url: 'https://github.com/hilarylewis92/number-guesser-react',
         src: './images/number-guesser-react.png',
         title: 'Number Guesser'},
-        {url: 'https://github.com/hilarylewis92/number-guesser-react',
-        src: './images/number-guesser-react.png',
-        title: 'Number Guesser'},
-        {url: 'https://github.com/hilarylewis92/number-guesser-react',
-        src: './images/number-guesser-react.png',
-        title: 'Number Guesser'},
+        {url: 'https://hilarylewis92.github.io/2DoBox-Pivot/',
+        src: './images/2-do-box.png',
+        title: '2 Do Box'},
+        {url: 'https://hilarylewis92.github.io/gametime/',
+        src: './images/game-time.png',
+        title: 'Pumpkin Smasher'},
       ]
     }
   }

@@ -33,7 +33,9 @@ export default class App extends Component {
   }
 
   gsapHeroAnimation() {
-    TweenMax.to('.hero-text-landing', 1.5, {bottom: 0}, {opacity: 1});
+    TweenMax.to('.hero-text-landing', 1.5,
+    {bottom: 0}
+    )
   }
 
   render() {
