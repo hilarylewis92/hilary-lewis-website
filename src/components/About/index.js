@@ -133,6 +133,9 @@ export default class About extends Component {
             </a> and photos are served through <a href ='https://unsplash.com/'
                className='underline'>
                Unsplash
+            </a>. To see the code I developed for this website, visit <a href = 'https://github.com/hilarylewis92/hilary-lewis-website'
+               className='underline'>
+               github
             </a>.
           </p>
         </section>
