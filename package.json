@@ -6,6 +6,7 @@
   "devDependencies": {
     "gsap": "^1.19.0",
     "lodash": "^4.17.3",
+    "react-loader": "^2.4.0",
     "react-scripts": "0.8.1"
   },
   "dependencies": {
