@@ -30,10 +30,6 @@ export default class Projects extends Component {
             className='twitter'>
           </a>
         </div>
-
-        <p className='copyright'>
-          &copy; 2017 Hilary Lewis. All rights reserved.
-        </p>
       </section>
     );
   }

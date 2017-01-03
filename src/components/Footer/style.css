@@ -8,16 +8,17 @@
   line-height: 130%;
   font-size: 15px;
   font-weight: 100;
+  background-color: #EFF0F4;
 }
 
 .single-contact {
   display: inline-block;
-  margin: 70px 30px 30px 30px;
+  margin: 90px 30px 30px 30px;
 }
 
 .mail {
-  width: 100px;
-  height: 100px;
+  width: 88px;
+  height: 88px;
   display:block;
   background: url('./images/mail.png') no-repeat;
 }
@@ -27,8 +28,8 @@
 }
 
 .linkedin {
-  width: 100px;
-  height: 100px;
+  width: 88px;
+  height: 88px;
   display:block;
   background: url('./images/linkedin.png') no-repeat;
 }
@@ -38,8 +39,8 @@
 }
 
 .github {
-  width: 100px;
-  height: 100px;
+  width: 88px;
+  height: 88px;
   display:block;
   background: url('./images/github.png') no-repeat;
 }
@@ -49,8 +50,8 @@
 }
 
 .twitter {
-  width: 100px;
-  height: 100px;
+  width: 88px;
+  height: 88px;
   display:block;
   background: url('./images/twitter.png') no-repeat;
 }
