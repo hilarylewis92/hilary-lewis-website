@@ -4,11 +4,12 @@
   color: #233B6E;
   text-align: center;
   font-size: 25px;
+  position: relative;
 }
 
 /*list of projects*/
 .projects-title {
-  margin: 10vh 0 40px 0;
+  margin: 20vh 0 40px 0;
   font-size: 55px;
 }
 
