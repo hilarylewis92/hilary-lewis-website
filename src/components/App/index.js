@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
-import { map } from 'lodash'
-import { TweenMax } from 'gsap'
-import { Loader } from 'react-loader'
+import Loader from 'react-loader'
 
 import './style.css'
 import Header from '../Header'
@@ -13,20 +10,33 @@ import Footer from '../Footer'
 import Home from './Home'
 
 export default class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      loaded: false
+    }
+  }
+
+  componentDidMount() {
+    this.onSuccess()
+  }
+
+  onSuccess() {
+    this.setState({
+      loaded: true
+    })
+  }
+
   render() {
     return (
       <div className='App'>
-        <Header />
+        <Loader loaded={this.state.loaded}>
+          <Header />
+          <Home />
+          <Footer />
+        </Loader>
 
-        <Home />
-
-        <Footer />
       </div>
     );
   }
 }
-
-// CREATIVE PROBLEM SOLVER.
-// Hilary Lewis.
-// Front-end web developer in Denver, Colorado.
-  // I'm a front-end developer in Denver, Colorado passionate about connecting the art of design with the science of programming.
