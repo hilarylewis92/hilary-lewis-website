@@ -1,20 +1,21 @@
 .Header {
-  margin: 10px;
+  margin: 15px;
   text-align: right;
   letter-spacing: 2px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 20px;
 }
 
+/*dropdown*/
 .menu {
   z-index: 1000000;
-  font-weight: bold;
   font-size: 20px;
-  width: 30%;
+  width: 100%;
   position: absolute;
   text-align: center;
   left: 0;
-  margin: 10px 2px;
+  margin: 15px 0px;
+  box-shadow: 0 0 10px #D3D6DB;
 }
 
 .menu ul {
@@ -25,20 +26,20 @@
 .menu li {
   display: block;
   padding: 15px 0 15px 0;
-  border: #84A58E 1px solid;
+  border: #D3D6DB 1px solid;
 }
 
 .menu li:hover {
   display: block;
-  background: #84A58E;
+  background: #D3D6DB;
   padding: 15px 0 15px 0;
-  border-bottom: #222f26 1px solid;
+  border: #EFF0F4 1px solid;
 }
 
 .menu ul li a {
   text-decoration: none;
   margin: 0px;
-  color:#fff;
+  color: white;
 }
 
 .menu ul li a:hover {

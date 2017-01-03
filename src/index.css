@@ -1,29 +1,28 @@
+/*#233B6E #415F9D #D3D6DB #EFF0F4*/
+
 * {
-  font-family: 'Roboto', sans-serif;
-  /*background: #f2f2f2;*/
+  font-family: 'Muli', sans-serif;
   background: white;
-  /*background: #EEEFF2;*/
 }
 
 /*links*/
 a {
-  color: #84A58E;
+  color: #D3D6DB;
   text-decoration: none;
   transition: 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #FFCA61;
-  /*color: #EEBC71;*/
+  color: #233B6E;
   cursor: pointer;
 }
 
 .active {
-  color: #FFCA61;
+  color: #233B6E;
 }
 
 /*buttons*/
-.button{
+.button {
   font-size: 20px;
   border: 2px solid;
   padding: 10px;

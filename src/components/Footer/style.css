@@ -1,12 +1,13 @@
 .Footer {
+  font-family: 'Muli', sans-serif;
   height: 250px;
   width: 100vw;
-  color: #84A58E;
+  color: #415F9D;
   text-align: center;
   letter-spacing: 2px;
-  font-family: 'Lato', sans-serif;
   line-height: 130%;
   font-size: 15px;
+  font-weight: 100;
 }
 
 .single-contact {

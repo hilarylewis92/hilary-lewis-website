@@ -1,8 +1,8 @@
 .Contact {
   height: 100vh;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   letter-spacing: 2px;
-  color: #84A58E;
+  color: #233B6E;
   text-align: center;
   line-height: 200%;
 }
@@ -14,7 +14,7 @@
 }
 
 .contact-title {
-  font-size: 45px;
+  font-size: 55px;
   margin: 30px;
 }
 
