@@ -4,6 +4,7 @@ export default function Hamburger(props) {
 	const
     width = `${props.width}px`,
   	height = `${props.height}px`,
+    right = `${props.right}`,
   	halfHeight = `${parseInt(height.replace('px', '')) / 2}px`,
   	isOpen = props.isOpen,
   	strokeWidth = props.strokeWidth,
@@ -19,7 +20,8 @@ export default function Hamburger(props) {
 		container: {
 			width,
 			height,
-			position: 'relative',
+			position: 'absolute',
+			right,
 			transform: `rotate(${props.rotate}deg)`
 		},
 		lineBase: {

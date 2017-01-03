@@ -68,7 +68,7 @@ export default class About extends Component {
             </p>
             <br />
             <p className="summary-paragraph">
-              As a lifelong learner, I am always looking to add useful skills. Whether it's becoming a front-end web developer, math teacher, yoga instructor, or coaching soccer, learning is one of my most rewarding passions.
+              As a lifelong learner, I am always looking to add useful skills. Whether it's going to Turing School of Software and Design to learn the languages needed to be a front-end web developer, graduating with a bachelors of mathematics from Baylor University, or earning my yoga instructor license, learning is one of my most rewarding passions.
             </p>
           </section>
 
@@ -133,6 +133,9 @@ export default class About extends Component {
             </a> and photos are served through <a href ='https://unsplash.com/'
                className='underline'>
                Unsplash
+            </a>. To see the code I developed for this website, visit <a href = 'https://github.com/hilarylewis92/hilary-lewis-website'
+               className='underline'>
+               github
             </a>.
           </p>
         </section>

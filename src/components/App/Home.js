@@ -23,14 +23,14 @@ export default class Home extends Component {
       ]
     }
   }
-  
+
   componentDidMount() {
     this.gsapHeroAnimation()
   }
 
   gsapHeroAnimation() {
     TweenMax.to('.hero-text-landing', 1.5,
-    {bottom: 220}
+    {top: 170}
     )
   }
 
@@ -39,10 +39,10 @@ export default class Home extends Component {
       <div className='Home'>
         <section className='hero-background-image'>
           <section className='hero-text-landing'>
-            HILARY LEWIS
-            <br />
+            <div className='name'>
+              HILARY LEWIS
+            </div>
             Front-End Developer
-            <br />
             Denver, Colorado
           </section>
         </section>
@@ -57,15 +57,15 @@ export default class Home extends Component {
               return(
                 <div className='single-project'>
                   <a href={project.url}>
-                    <h4 className='project-title'>
-                      {project.title}
-                    </h4>
-
                     <img
                       className='project-image'
                       src={require(project.src)}
                       role='none'
                     />
+
+                    <h4 className='project-title'>
+                      {project.title}
+                    </h4>
                   </a>
                 </div>
               )
