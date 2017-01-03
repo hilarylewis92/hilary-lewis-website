@@ -17,6 +17,8 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 50px;
+  width: 96vw;
+  margin: auto;
 }
 
 /*single projects*/
@@ -26,9 +28,9 @@
 }
 
 .project-image {
+  border: 5px solid #D3D6DB;
   width: 30vw;
   height: 300px;
-  box-shadow: 0 0 10px #D3D6DB;
 }
 
 .project-title {

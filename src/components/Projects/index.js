@@ -49,8 +49,14 @@ export default class Projects extends Component {
               return(
                 <div className='single-project'>
                   <a href={project.url}>
-                    <h4 className='project-title'>{project.title}</h4>
-                    <img className='project-image' src={require(project.src)} role='none' />
+                    <img className='project-image'
+                      src={require(project.src)}
+                      role='none'
+                    />
+
+                    <h4 className='project-title'>
+                      {project.title}
+                    </h4>
                   </a>
                 </div>
               )
