@@ -1,14 +1,6 @@
-/*font-family: 'Lato', sans-serif;*/
-/*font-family: 'Roboto', sans-serif;*/
-/*#FFCA61
-#FFEC85
-#F2FFDF
-#C9F0D6*/
-
 .App {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   letter-spacing: 2px;
-  color: #84A58E;
   text-align: center;
   font-size: 25px;
 }
@@ -16,7 +8,7 @@
 /*hero*/
 .hero-background-image {
   height: 95vh;
-  background: linear-gradient(to top, transparent 0%, white 150%), url('background.jpg');
+  background: linear-gradient(to top, transparent 0%, white 250%), url('background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,13 +16,12 @@
 }
 
 .hero-text-landing {
-  color: #222f26;
-  text-shadow: 1px 1px #84A58E;
-  padding: 3% 3% 3% 8%;
+  text-shadow: 1px 1px white;
+  color: black;
   font-size: 65px;
   position: absolute;
-  width: 50%;
-  left: 28%;
+  width: 60%;
+  left: 20%;
   background-color: hsla(0, 0%, 100%, 0);
 }
 
@@ -61,7 +52,7 @@
 .project-image {
   width: 30vw;
   height: 300px;
-  box-shadow: 0 0 5px #84A58E;
+  box-shadow: 0 0 10px #D3D6DB;
 }
 
 /*view more button*/

@@ -26,11 +26,11 @@ export default class Header extends Component {
         <Hamburger
           isOpen={this.state.open}
           menuClicked={this.handleClick.bind(this)}
-          width={25}
-          height={20}
+          width={30}
+          height={25}
           strokeWidth={3}
           rotate={0}
-          color='#84A58E'
+          color='#233B6E'
           animationDuration={0.5}
         />
 
