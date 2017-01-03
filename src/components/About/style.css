@@ -1,20 +1,20 @@
 .About {
-  color: #84A58E;
+  color: #233B6E;
   letter-spacing: 2px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 20px;
   line-height: 170%;
 }
 
 .heading {
-  text-shadow: 0.5px 0.5px #84A58E;
+  /*text-shadow: 0.5px 0.5px #84A58E;*/
   padding: 40px 0 10px 0;
   font-size: 25px;
 }
 
 /*hero*/
 .parallax-image {
-  background: linear-gradient(to top, transparent 0%, white 150%), url('background.jpg');
+  background: linear-gradient(to top, transparent 0%, white 250%), url('background.jpg');
   height: 40vh;
   background-attachment: fixed;
   background-position: bottom;
@@ -31,7 +31,7 @@
   top: 30vh;
   height: 250px;
   border-radius: 50%;
-  box-shadow: 0 0 5px #84A58E;
+  box-shadow: 0 0 10px #D3D6DB;
 }
 
 /*about summary*/
@@ -43,7 +43,7 @@
 .title {
   padding: 160px 0 20px 0;
   text-align: center;
-  font-size: 45px;
+  font-size: 55px;
 }
 
 .summary {
