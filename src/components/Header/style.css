@@ -1,5 +1,5 @@
 .Header {
-  margin: 15px;
+  /*margin: 15px;*/
   text-align: right;
   letter-spacing: 2px;
   font-family: 'Muli', sans-serif;
@@ -7,6 +7,11 @@
 }
 
 /*dropdown*/
+.hamburger-menu {
+  z-index: 1000000;
+  margin: 20px;
+}
+
 .menu {
   z-index: 1000000;
   font-size: 20px;
@@ -14,7 +19,7 @@
   position: absolute;
   text-align: center;
   left: 0;
-  margin: 15px 0px;
+  margin: 45px 0px;
   box-shadow: 0 0 10px #D3D6DB;
 }
 
