@@ -1,6 +1,7 @@
 .Footer {
+  margin-top: 100px;
   font-family: 'Muli', sans-serif;
-  height: 40vh;
+  height: 25vh;
   width: 100vw;
   text-align: center;
   background-color: #EFF0F4;
@@ -8,7 +9,7 @@
 
 .single-contact {
   display: inline-block;
-  margin: 90px 30px 30px 30px;
+  margin: 5vh 30px;
 }
 
 .mail {

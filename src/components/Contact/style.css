@@ -1,5 +1,4 @@
 .Contact {
-  height: 60vh;
   font-family: 'Muli', sans-serif;
   letter-spacing: 2px;
   color: #233B6E;
@@ -8,6 +7,7 @@
 }
 
 .contact-section {
+  height: 40vh;
   font-size: 25px;
   margin: 10vh auto;
   width: 60vw;
