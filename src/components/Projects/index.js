@@ -48,7 +48,8 @@ export default class Projects extends Component {
             {this.state.projects.map(project => {
               return(
                 <div className='single-project'>
-                  <a href={project.url}>
+                  <a href={project.url}
+                    target='_blank'>
                     <img className='project-image'
                       src={require(project.src)}
                       role='none'

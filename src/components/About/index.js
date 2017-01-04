@@ -64,11 +64,11 @@ export default class About extends Component {
 
           <section className="summary">
             <p className="summary-paragraph">
-              As a creative-minded front-end developer, I value using both my left and right brain. I enjoy using my technical skills to solve challenging problems and write efficient code while also using my creative side to design clean and unique user interface on applications and websites.
+              As a creative front end developer, I value using both my left and right brain. My technical skills help me solve challenging problems and write efficient code, while my creative side encourages me to design clean and unique user interfaces on applications and websites.
             </p>
             <br />
             <p className="summary-paragraph">
-              As a lifelong learner, I am always looking to add useful skills. Whether it's going to Turing School of Software and Design to learn the languages needed to be a front-end web developer, graduating with a bachelors of mathematics from Baylor University, or earning my yoga instructor license, learning is one of my most rewarding passions.
+              As a lifelong learner, I am always looking to develop skills that will benefit my life holistically. Whether it's attending Turing School of Software and Design to learn the languages required of a front end web developer, graduating with a Bachelor of Mathematics from Baylor University or becoming a licensed yoga instructor, learning is my most rewarding passion.
             </p>
           </section>
 
@@ -116,7 +116,7 @@ export default class About extends Component {
           </h4>
 
           <p>
-            This website was built by me using <a href ='https://facebook.github.io/react/'
+            I build this website using <a href ='https://facebook.github.io/react/'
               className='underline'>
               React
             </a>, <a href ='https://github.com/ReactTraining/react-router/tree/master/docs'

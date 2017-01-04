@@ -43,6 +43,7 @@ export default class Home extends Component {
               HILARY LEWIS
             </div>
             Front-End Developer
+            <br />
             Denver, Colorado
           </section>
         </section>
@@ -56,7 +57,8 @@ export default class Home extends Component {
             {this.state.recent.map(project => {
               return(
                 <div className='single-project'>
-                  <a href={project.url}>
+                  <a href={project.url}
+                    target='_blank'>
                     <img
                       className='project-image'
                       src={require(project.src)}
