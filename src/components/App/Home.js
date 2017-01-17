@@ -33,7 +33,7 @@ export default class Home extends Component {
 
   gsapHeroAnimation() {
     TweenMax.to('.hero-text-landing', 1.5,
-    {top: 170}
+    {top: 220}
     )
   }
 
