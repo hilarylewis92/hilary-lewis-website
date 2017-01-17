@@ -1,19 +1,16 @@
 .Footer {
-  font-family: 'Muli', sans-serif;
-  height: 250px;
+  /*position: relative;*/
+  font-family: 'Quicksand', sans-serif;
+  height: 110px;
   width: 100vw;
-  color: #415F9D;
   text-align: center;
-  letter-spacing: 2px;
-  line-height: 130%;
-  font-size: 15px;
-  font-weight: 100;
   background-color: #EFF0F4;
+  margin-top: 10px;
 }
 
 .single-contact {
   display: inline-block;
-  margin: 90px 30px 30px 30px;
+  margin: 10px 10px 0 0;
 }
 
 .mail {

@@ -20,7 +20,7 @@ export default function Hamburger(props) {
 		container: {
 			width,
 			height,
-			position: 'absolute',
+			position: 'fixed',
 			right,
 			transform: `rotate(${props.rotate}deg)`
 		},
