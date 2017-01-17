@@ -36,7 +36,7 @@ export default class Header extends Component {
           height={15}
           strokeWidth={3}
           rotate={0}
-          color='#233B6E'
+          color='#D3D6DB'
           animationDuration={0.5}
           right={0}
         />

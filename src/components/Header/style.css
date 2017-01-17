@@ -7,7 +7,7 @@
 
 .hl-logo {
   font-size: 30px;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 10;
@@ -18,7 +18,7 @@
 
 .hl-logo:hover {
   cursor: pointer;
-  color: black;
+  color: #233B6E;
 }
 
 /*dropdown*/
@@ -29,19 +29,19 @@
   background: none;
 }
 
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+
 .menu {
+  position: fixed;
   z-index: 1000000;
   font-size: 20px;
   width: 100%;
-  position: absolute;
   text-align: center;
   top: 0;
   margin: 45px 0px;
   box-shadow: 0 0 10px #D3D6DB;
-}
-
-.hamburger-menu:hover {
-  cursor: pointer;
 }
 
 .menu ul {
