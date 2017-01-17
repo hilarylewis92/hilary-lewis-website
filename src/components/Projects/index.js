@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Masonry from 'react-masonry-component'
 
 import './style.css';
 import Header from '../Header'
 import Footer from '../Footer'
 
+var masonryOptions = {
+  transitionDuration: 1
+}
 
 export default class Projects extends Component {
   constructor() {
@@ -16,12 +20,12 @@ export default class Projects extends Component {
         {url: 'https://nimblenetwork-d13c3.firebaseapp.com/',
         src: './images/nimble-network.png',
         title: 'Nimble Network'},
+        {url: 'https://github.com/hilarylewis92/number-guesser-react',
+          src: './images/number-guesser-react.jpg',
+          title: 'Number Guesser'},
         {url: 'https://hilarylewis92.github.io/weather-forecast/#/?_k=myzv4x',
         src: './images/weather-dux.png',
         title: 'Weather Dux'},
-        {url: 'https://github.com/hilarylewis92/number-guesser-react',
-        src: './images/number-guesser-react.jpg',
-        title: 'Number Guesser'},
         {url: 'https://shoot-the-breeze-1be68.firebaseapp.com/',
         src: './images/shoot-the-breeze.png',
         title: 'Shoot the Breeze'},
@@ -47,25 +51,28 @@ export default class Projects extends Component {
             Projects
           </h3>
 
-          <section className='projects-list'>
+          <Masonry
+            className={'projects-list'}
+            elementType={'ul'}
+            options={masonryOptions}
+            disableImagesLoaded={false}
+            updateOnEachImageLoad={false}>
+
             {this.state.projects.map(project => {
               return(
-                <div className='single-project'>
+                <li className='single-project'>
                   <a href={project.url}
                     target='_blank'>
                     <img className='project-image'
                       src={require(project.src)}
                       role='none'
                     />
-
-                    <h4 className='project-title'>
-                      {project.title}
-                    </h4>
                   </a>
-                </div>
+                </li>
               )
             })}
-          </section>
+
+          </Masonry>
         </section>
 
         <section className='footer-section'>

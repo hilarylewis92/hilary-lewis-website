@@ -3,36 +3,24 @@
   letter-spacing: 2px;
   color: #233B6E;
   text-align: center;
-  font-size: 25px;
-  position: relative;
 }
 
 /*list of projects*/
 .projects-title {
-  margin: 20vh 0 40px 0;
+  margin: 80px 0 40px 0;
   font-size: 55px;
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 50px;
-  width: 96vw;
-  margin: auto;
+  width: 100vw;
 }
 
 /*single projects*/
 .single-project {
-  margin: auto;
-  padding: 30px 0;
+  width: 50%;
+  margin-bottom: 10px;
 }
 
 .project-image {
-  border: 5px solid #D3D6DB;
-  width: 30vw;
-}
-
-.project-title {
-  font-size: 25px;
-  padding-bottom: 10px;
+  width: 98%;
 }

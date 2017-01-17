@@ -35,7 +35,7 @@
 }
 
 /*recent projects*/
-.recent-projects-section {
+/*.recent-projects-section {
   height: 90vh;
   margin-top: 10vh;
 }
@@ -71,7 +71,7 @@
 .project-image:hover{
   box-shadow: 0 0 10px #D3D6DB;
   transition: 0.5s ease-in-out;
-}
+}*/
 
 /*view more button*/
 .view-more-section{
