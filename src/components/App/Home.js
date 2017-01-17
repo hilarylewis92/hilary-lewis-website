@@ -2,8 +2,14 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 import { map } from 'lodash'
 import { TweenMax } from 'gsap'
+import Masonry from 'react-masonry-component'
 
 import './style.css'
+
+
+var masonryOptions = {
+  transitionDuration: 1
+}
 
 export default class Home extends Component {
 
@@ -11,12 +17,9 @@ export default class Home extends Component {
     super()
     this.state = {
       recent: [
-        {url: 'https://nimblenetwork-d13c3.firebaseapp.com/',
-        src: './images/nimble-network.png',
-        title: 'Nimble Network'},
-        {url: 'https://shoot-the-breeze-1be68.firebaseapp.com/',
-        src: './images/shoot-the-breeze.png',
-        title: 'Shoot the Breeze'},
+        {url: 'https://the-unreasonable-challenge.firebaseapp.com/',
+        src: './images/the-unreasonable-challenge.png',
+        title: 'The Unreasonable Challenge'},
         {url: 'https://hilarylewis92.github.io/weather-forecast/#/?_k=myzv4x',
         src: './images/weather-dux.png',
         title: 'Weather Dux'}
@@ -50,28 +53,33 @@ export default class Home extends Component {
 
         <section className='recent-projects-section'>
           <h3 className='recent-projects-title'>
-            Recent Projects
+            Most Recent Projects
           </h3>
 
           <section className='recent-projects-list'>
-            {this.state.recent.map(project => {
-              return(
-                <div className='single-project'>
-                  <a href={project.url}
-                    target='_blank'>
-                    <img
-                      className='project-image'
-                      src={require(project.src)}
-                      role='none'
-                    />
 
-                    <h4 className='project-title'>
-                      {project.title}
-                    </h4>
-                  </a>
-                </div>
-              )
-            })}
+            <Masonry
+              className={'projects-list'}
+              elementType={'ul'}
+              options={masonryOptions}
+              disableImagesLoaded={false}
+              updateOnEachImageLoad={false}>
+
+              {this.state.recent.map(project => {
+                return(
+                  <div className='single-project'>
+                    <a href={project.url}
+                      target='_blank'>
+                      <img
+                        className='project-image'
+                        src={require(project.src)}
+                        role='none'
+                      />
+                    </a>
+                  </div>
+                )
+              })}
+            </Masonry>
           </section>
 
           <section className='view-more-section'>

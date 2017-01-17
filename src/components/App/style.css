@@ -34,8 +34,9 @@
   background-color: hsla(0, 0%, 100%, 0);
 }
 
+
 /*recent projects*/
-/*.recent-projects-section {
+.recent-projects-section {
   height: 90vh;
   margin-top: 10vh;
 }
@@ -45,33 +46,6 @@
   padding: 20px;
   color: #233B6E;
 }
-
-.recent-projects-list {
-  display: flex;
-  width: 96vw;
-  margin: auto
-}
-
-.single-project {
-  margin: 20px;
-}
-
-.project-title {
-  font-size: 20px;
-  display: absolute;
-  z-index: 2000;
-  top: 0;
-}
-
-.project-image {
-  border: 6px solid #D3D6DB;
-  height: 200px;
-}
-
-.project-image:hover{
-  box-shadow: 0 0 10px #D3D6DB;
-  transition: 0.5s ease-in-out;
-}*/
 
 /*view more button*/
 .view-more-section{

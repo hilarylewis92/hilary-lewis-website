@@ -48,7 +48,7 @@ export default class Projects extends Component {
 
         <section className='Projects'>
           <h3 className='projects-title'>
-            Projects
+            My Projects
           </h3>
 
           <Masonry
