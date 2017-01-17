@@ -1,7 +1,7 @@
 .Header {
+  font-family: 'Quicksand', sans-serif;
   text-align: right;
   letter-spacing: 2px;
-  font-family: 'Muli', sans-serif;
   font-size: 20px;
 }
 
@@ -23,6 +23,10 @@
   box-shadow: 0 0 10px #D3D6DB;
 }
 
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+
 .menu ul {
   list-style-type: none;
   list-style-image: none;
@@ -35,6 +39,7 @@
 }
 
 .menu li:hover {
+  cursor: pointer;
   display: block;
   background: #D3D6DB;
   padding: 15px 0 15px 0;
@@ -43,7 +48,6 @@
 
 .menu ul li a {
   text-decoration: none;
-  /*margin: 0px;*/
   color: white;
 }
 
@@ -58,4 +62,5 @@
 .menu a:hover{
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }

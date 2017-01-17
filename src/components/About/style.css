@@ -1,13 +1,12 @@
 .About {
   color: #233B6E;
   letter-spacing: 2px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   line-height: 170%;
 }
 
 .heading {
-  /*text-shadow: 0.5px 0.5px #84A58E;*/
   padding: 40px 0 10px 0;
   font-size: 25px;
 }
@@ -106,7 +105,7 @@
   text-align: center;
   color: #84A58E;
   letter-spacing: 2px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .view-about-section {
