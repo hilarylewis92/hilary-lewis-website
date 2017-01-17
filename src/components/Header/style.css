@@ -5,11 +5,28 @@
   font-size: 20px;
 }
 
+.hl-logo {
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  margin: 10px;
+  letter-spacing: -3px;
+  background: none;
+}
+
+.hl-logo:hover {
+  cursor: pointer;
+  color: black;
+}
+
 /*dropdown*/
 .hamburger-menu {
   z-index: 1000000;
   margin: 20px;
   top: 0;
+  background: none;
 }
 
 .menu {

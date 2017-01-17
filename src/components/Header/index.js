@@ -23,6 +23,12 @@ export default class Header extends Component {
   render() {
     return (
       <div role="nav" className='Header'>
+        <Link
+          to='/'
+          className='hl-logo'>
+          HL
+        </Link>
+
         <Hamburger
           isOpen={this.state.open}
           menuClicked={this.handleClick.bind(this)}
