@@ -1,15 +1,16 @@
 .Footer {
-  margin-top: 100px;
+  /*position: relative;*/
   font-family: 'Quicksand', sans-serif;
-  height: 25vh;
+  height: 110px;
   width: 100vw;
   text-align: center;
   background-color: #EFF0F4;
+  margin-top: 10px;
 }
 
 .single-contact {
   display: inline-block;
-  margin: 5vh 30px;
+  margin: 10px 10px 0 0;
 }
 
 .mail {

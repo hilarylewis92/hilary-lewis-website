@@ -27,7 +27,7 @@ export default class Contact extends Component {
           </a>
           <br />
           <br />
-          <p>
+          <p className='contact-summary'>
             You can also reach me through any social media below.
           </p>
         </section>

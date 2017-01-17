@@ -41,7 +41,9 @@ export default class Home extends Component {
     return (
       <div className='Home'>
         <section className='hero-background-image'>
+
           <section className='hero-text-landing'>
+
             <div className='name'>
               HILARY LEWIS
             </div>
@@ -49,6 +51,7 @@ export default class Home extends Component {
             <br />
             Denver, Colorado
           </section>
+
         </section>
 
         <section className='recent-projects-section'>
@@ -83,10 +86,13 @@ export default class Home extends Component {
           </section>
 
           <section className='view-more-section'>
-            <Link to='/projects'
+
+            <Link
+              to='/projects'
               className='view-more-projects button'>
               View More Projects &rarr;
             </Link>
+
           </section>
         </section>
       </div>
