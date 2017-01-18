@@ -32,8 +32,7 @@ export default class ProjectModal extends Component {
     const { project } = this.props
 
     return (
-      <div
-        className='modal'>
+      <div>
 
         <Modal
           className='modal-card'
