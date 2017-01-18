@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "boron": "^0.2.3",
     "gsap": "^1.19.0",
     "lodash": "^4.17.3",
     "masonry-layout": "^4.1.1",
