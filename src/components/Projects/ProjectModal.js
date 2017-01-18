@@ -62,7 +62,6 @@ export default class ProjectModal extends Component {
               src={require(project.src)}
               role='none'
             />
-            View {project.title}
           </a>
 
           <h3
@@ -74,12 +73,18 @@ export default class ProjectModal extends Component {
             className='projects-description'>
             {project.description}
           </p>
-
+          <br />
+          <a
+            href={project.url}
+            target='_blank'>
+            View application
+          </a>
+          <br />
           <a
             className='project-github'
             href={project.github}
             target='_blank'>
-            View {project.title} on github
+            View code
           </a>
         </Modal>
       </div>
