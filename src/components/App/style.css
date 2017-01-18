@@ -16,26 +16,26 @@
 }
 
 .name {
-  font-size: 70px;
-  font-weight: bold;
+  font-size: 80px;
   margin-bottom: 15px;
   background-color: hsla(0, 0%, 100%, 0);
-
+  text-shadow: 4px 4px #EFF0F4;
 }
 
 .hero-text-landing {
   line-height: 120%;
   color: black;
-  font-size: 50px;
+  font-size: 60px;
   position: absolute;
   bottom: 0;
   width: 100%;
   margin: auto;
   background-color: hsla(0, 0%, 100%, 0);
+  text-shadow: 2px 2px #EFF0F4;
 }
 
 
-@media (max-width: 516px) {
+@media (max-width: 620px) {
   .name {
     font-size: 50px;
   }

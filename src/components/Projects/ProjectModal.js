@@ -30,40 +30,59 @@ export default class ProjectModal extends Component {
 
   render() {
     const { project } = this.props
-    console.log(project)
 
     return (
-      <div>
+      <div
+        className='modal'>
 
         <Modal
           className='modal-card'
           ref="modal">
 
-          <div
-            className='project-modal'>
+          <div className='arrow-container'>
 
-            <div className='arrow-container'>
+            <button
+              className='arrows left-arrow'
+              onClick={(e) => this.clickPrevFun(e)}
+            > {'<'}
+            </button>
 
-              <button
-                className='arrows left-arrow'
-                onClick={(e) => this.clickPrevFun(e)}
-              > {'<'}
-              </button>
+            <button
+              className='arrows right-arrow'
+              onClick={(e) => this.clickNextFun(e)}
+            > {'>'}
+            </button>
 
-              <button
-                className='arrows right-arrow'
-                onClick={(e) => this.clickNextFun(e)}
-              > {'>'}
-              </button>
+          </div>
 
-            </div>
+          <a
+            href={project.url}
+            target='_blank'>
 
             <img
-              className='project-image'
+              className='project-modal-image'
               src={require(project.src)}
               role='none'
             />
-          </div>
+
+          </a>
+
+          <h3
+            className='project-title'>
+            {project.title}
+          </h3>
+
+          <p
+            className='projects-description'>
+            {project.description}
+          </p>
+
+          <a
+            className='project-github'
+            href={project.github}
+            target='_blank'>
+            View {project.title} on github
+          </a>
         </Modal>
       </div>
     )
