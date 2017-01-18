@@ -50,12 +50,6 @@ export default class Projects extends Component {
           title: '2Do Box',
           description:'This is a simple to-do list application. The user can enter in tasks, updown or downvote them based on five levels of importance, delete tasks, and more. We used Selenium Webdriver to extensively test this application.',
           github: 'https://github.com/hilarylewis92/2DoBox-Pivot'},
-
-        {url: 'https://hilarylewis92.github.io/gametime/',
-          src: './images/game-time.png',
-          title: 'Pumpkin Smasher',
-          description:'add description',
-          github: 'https://github.com/hilarylewis92/gametime'},
       ],
       currentIndex: 0,
     }

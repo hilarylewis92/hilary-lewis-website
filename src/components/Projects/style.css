@@ -6,7 +6,7 @@
 }
 
 .projects-title {
-  margin: 50px;
+  margin: 80px 0 60px 0;
   font-size: 55px;
 }
 
@@ -20,7 +20,7 @@
 .single-project {
   box-shadow: 0px 0px 5px gray;
   width: 30%;
-  margin: 0 10px 10px 10px;
+  margin: 10px;
   transition: left 0.5s;
   padding: 5px;
 }
