@@ -18,11 +18,14 @@ export default class Home extends Component {
     this.state = {
       recent: [
         {url: 'https://the-unreasonable-challenge.firebaseapp.com/',
-        src: './images/the-unreasonable-challenge.png',
-        title: 'The Unreasonable Challenge'},
+          src: './images/the-unreasonable-challenge.png',
+          title: 'The Unreasonable Challenge'},
         {url: 'https://hilarylewis92.github.io/weather-forecast/#/?_k=myzv4x',
-        src: './images/weather-dux.png',
-        title: 'Weather Dux'}
+          src: './images/weather-dux.png',
+          title: 'Weather Dux'},
+        {url: 'https://nimblenetwork-d13c3.firebaseapp.com/',
+          src: './images/nimble-network.png',
+          title: 'Nimble Network'},
       ]
     }
   }

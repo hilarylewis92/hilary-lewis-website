@@ -8,7 +8,6 @@
 }
 
 .heading {
-  /*margin: 40px 0 10px 0;*/
   font-size: 25px;
 }
 
@@ -48,6 +47,18 @@
   padding: 150px 0 30px 0;
   text-align: center;
   font-size: 55px;
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 35px;
+  }
+  .About {
+    font-size: 15px;
+  }
+  .heading {
+    font-size: 20px;
+  }
 }
 
 .summary {
@@ -115,7 +126,7 @@
 
 /*resume button*/
 .resume-section {
-  margin: 50px;
+  margin: 20px;
   text-align: center;
   display: block;
 }
