@@ -4,6 +4,8 @@ import { map } from 'lodash'
 import { TweenMax } from 'gsap'
 import Masonry from 'react-masonry-component'
 
+import ProjectModal from './../Projects/ProjectModal'
+
 import './style.css'
 
 
@@ -18,12 +20,24 @@ export default class Home extends Component {
     this.state = {
       recent: [
         {url: 'https://the-unreasonable-challenge.firebaseapp.com/',
-        src: './images/the-unreasonable-challenge.png',
-        title: 'The Unreasonable Challenge'},
+          src: './images/the-unreasonable-challenge.png',
+          title: 'The Unreasonable Challenge',
+          description:'An application used to write about and complete challenges between users, built with React, JavaScript, Create-React-App, Firebase and CSS. Users can log in, add images and challenges, count the times each challenge is completed, and comment on others challenges. Feel free to log in and add a challenge!',
+          github:'https://github.com/hilarylewis92/the-unreasonable-challenge'},
+
         {url: 'https://hilarylewis92.github.io/weather-forecast/#/?_k=myzv4x',
-        src: './images/weather-dux.png',
-        title: 'Weather Dux'}
-      ]
+          src: './images/weather-dux.png',
+          title: 'Weather Dux',
+          description: 'This weather application was built using React, React-Router, and Redux and tested with Jest and Enzyme. The application retrieves and displays forecast data from Weather Underground API, uses the Geolocation to determine the weather in your current location, and saves favorite cities to display their forecasts. For each city, the user can display current forecast, ten day forecast, hourly forecast for each day, and delete any pinned cities.',
+          github: 'https://github.com/hilarylewis92/weather-forecast'},
+
+        {url: 'https://nimblenetwork-d13c3.firebaseapp.com/',
+          src: './images/nimble-network.png',
+          title: 'Nimble Network',
+          description: 'An app to keep track of contacts related to people you network with in an industry. Upon signing in through google using Firebase, the user is able to record name, company, email, social media, and phone number of new contacts. The user can also add an image to each contact saved. There is a toggle on/off “followup” indicator on each contact, which will save those contacts in a “followup” list for quick reference. The application permits multiple options for email, phone, and social media, and allows the user to specify “primary” where applicable. Finally, it includes an option note field for each contact, so that the user can write little reminders.',
+          github: 'https://github.com/hilarylewis92/nimble-network'},
+      ],
+      currentIndex: 0,
     }
   }
 
@@ -37,7 +51,48 @@ export default class Home extends Component {
     )
   }
 
+  clickPrev(i) {
+    const { recent } = this.state
+    let newIndex
+
+    i > 0
+      ? newIndex = i - 1
+      : newIndex = 0
+
+    const project = recent[newIndex]
+
+    this.setState ({
+      currentIndex: newIndex,
+    })
+  }
+
+  clickNext(i) {
+    const { recent } = this.state
+    let newIndex
+
+    i < recent.length - 1
+      ? newIndex = i + 1
+      : newIndex = i
+
+    const project = recent[newIndex]
+
+    this.setState ({
+      currentIndex: newIndex,
+    })
+  }
+
+  grabProject (i) {
+    this.setState ({
+      currentIndex: i
+    })
+    this.refs.modal.showModal()
+  }
+
   render() {
+    const { recent, currentIndex } = this.state
+
+    var currentProject = recent[currentIndex]
+
     return (
       <div className='Home'>
         <section className='hero-background-image'>
@@ -68,22 +123,32 @@ export default class Home extends Component {
               disableImagesLoaded={false}
               updateOnEachImageLoad={false}>
 
-              {this.state.recent.map(project => {
+              {recent.map((project, i) => {
                 return(
-                  <div className='single-project'>
-                    <a href={project.url}
-                      target='_blank'>
-                      <img
-                        className='project-image'
-                        src={require(project.src)}
-                        role='none'
-                      />
-                    </a>
-                  </div>
+                  <li
+                    className='single-project'
+                    key={i}
+                    onClick={() => this.grabProject(i)}>
+
+                    <img
+                      className='project-image'
+                      src={require(project.src)}
+                      role='none'
+                    />
+
+                </li>
                 )
               })}
             </Masonry>
           </section>
+
+          <ProjectModal
+            ref='modal'
+            project={currentProject || {}}
+            i={currentIndex}
+            clickNext={this.clickNext.bind(this)}
+            clickPrev={this.clickPrev.bind(this)}
+          />
 
           <section className='view-more-section'>
 

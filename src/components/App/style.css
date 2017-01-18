@@ -1,8 +1,11 @@
 .App {
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 2px;
+}
+
+.loader-section {
   text-align: center;
-  font-size: 25px;
+  margin-top: 30vh;
 }
 
 /*hero*/
@@ -16,34 +19,28 @@
 }
 
 .name {
-  font-size: 100px;
-  font-weight: bold;
+  text-align: center;
+  font-size: 80px;
   margin-bottom: 15px;
   background-color: hsla(0, 0%, 100%, 0);
-
+  text-shadow: 4px 4px #EFF0F4;
 }
 
 .hero-text-landing {
+  text-align: center;
   line-height: 120%;
   color: black;
-  font-size: 70px;
+  font-size: 60px;
   position: absolute;
   bottom: 0;
   width: 100%;
   margin: auto;
   background-color: hsla(0, 0%, 100%, 0);
+  text-shadow: 2px 2px #EFF0F4;
 }
 
-@media (max-width: 723px) {
-  .name {
-    font-size: 70px;
-  }
-  .hero-text-landing {
-    font-size: 50px;
-  }
-}
 
-@media (max-width: 516px) {
+@media (max-width: 620px) {
   .name {
     font-size: 50px;
   }
@@ -54,10 +51,10 @@
 
 @media (max-width: 375px) {
   .name {
-    font-size: 35px;
+    font-size: 40px;
   }
   .hero-text-landing {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -67,7 +64,9 @@
 }
 
 .recent-projects-title {
+  text-align: center;
   font-size: 55px;
+  margin: 30px;
   padding: 20px;
   color: #233B6E;
 }
@@ -79,7 +78,8 @@
 }
 
 /*view more button*/
-.view-more-section{
-  margin: 60px;
+.view-more-section {
+  margin: 55px;
   position: relative;
+  text-align: center;
 }

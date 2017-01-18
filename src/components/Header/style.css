@@ -6,7 +6,7 @@
 }
 
 .hl-logo {
-  font-size: 30px;
+  font-size: 35px;
   position: fixed;
   left: 0;
   top: 0;
@@ -27,26 +27,23 @@
   margin: 20px;
   top: 0;
   background: none;
+  opacity: 0.5;
 }
 
 .hamburger-menu:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 .menu {
   position: fixed;
   z-index: 1000000;
-  font-size: 20px;
+  font-size: 25px;
   width: 100%;
   text-align: center;
   top: 0;
   margin: 45px 0px;
   box-shadow: 0 0 10px #D3D6DB;
-}
-
-.menu ul {
-  list-style-type: none;
-  list-style-image: none;
 }
 
 .menu li {
@@ -63,21 +60,7 @@
   border: #EFF0F4 1px solid;
 }
 
-.menu ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-.menu ul li a:hover {
-  text-decoration: none;
-}
-
-.menu a {
-  text-decoration: none;
-}
-
 .menu a:hover{
-  text-decoration: none;
   color: white;
   cursor: pointer;
 }

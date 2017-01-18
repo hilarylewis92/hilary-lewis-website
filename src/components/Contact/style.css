@@ -7,7 +7,7 @@
 }
 
 .contact-section {
-  height: 45vh;
+  height: 40vh;
   font-size: 25px;
   width: 75%;
   margin: 140px auto;
@@ -31,7 +31,7 @@
 
   .contact-title {
     margin: 20px;
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .contact-email {
