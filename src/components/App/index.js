@@ -13,7 +13,7 @@ export default class App extends Component {
   constructor() {
     super()
     this.state = {
-      loaded: false,  
+      loaded: false,
     }
   }
 
@@ -28,15 +28,22 @@ export default class App extends Component {
   }
 
   render() {
+    const { loaded } = this.state
+
     return (
       <div className='App'>
-        <Loader loaded={this.state.loaded}>
-          <Header />
-          <Home />
-          <Footer />
-        </Loader>
-
+        {loaded ?
+          <div>
+            <Header />
+            <Home />
+            <Footer />
+          </div>
+        :
+          <p>
+            loading...
+          </p>
+        }
       </div>
-    );
+    )
   }
 }

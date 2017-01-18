@@ -57,13 +57,12 @@ export default class ProjectModal extends Component {
           <a
             href={project.url}
             target='_blank'>
-
             <img
               className='project-modal-image'
               src={require(project.src)}
               role='none'
             />
-
+            View {project.title}
           </a>
 
           <h3
