@@ -39,9 +39,13 @@ export default class App extends Component {
             <Footer />
           </div>
         :
-          <p>
-            loading...
-          </p>
+          <div
+            className='loader-section'>
+            <img
+              className='loader'
+              src={require('./images/triangle.svg')}
+              />
+          </div>
         }
       </div>
     )

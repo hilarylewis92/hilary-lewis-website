@@ -3,6 +3,11 @@
   letter-spacing: 2px;
 }
 
+.loader-section {
+  text-align: center;
+  margin-top: 30vh;
+}
+
 /*hero*/
 .hero-background-image {
   height: 100vh;
