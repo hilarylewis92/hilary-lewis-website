@@ -19,10 +19,11 @@ export default class Project extends Component {
   }
 
   render() {
-    const { project } = this.props
-
+    const { project } = this.props.params
+    console.log(this.props.params);
     return (
-      <div>
+      <div
+        hidden='true'>
 
         <div className='arrow-container'>
 
