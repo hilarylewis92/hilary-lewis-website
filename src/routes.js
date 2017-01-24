@@ -4,6 +4,7 @@ import { BrowserRouter, Match, Miss } from 'react-router';
 import App from './components/App';
 import About from './components/About';
 import Projects from './components/Projects';
+import Project from './components/Projects/Project';
 import Contact from './components/Contact';
 import Resume from './components/About/resume';
 
@@ -15,6 +16,7 @@ const Routes = () => {
         <Match exactly pattern="/about" component={About} />
         <Match exactly pattern="/about/resume" component={Resume} />
         <Match exactly pattern="/projects" component={Projects} />
+        <Match pattern="/projects/:id" component={Project} />
         <Match exactly pattern="/contact" component={Contact} />
         <Miss component={NotFound} />
       </div>

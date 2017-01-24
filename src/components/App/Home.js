@@ -4,8 +4,6 @@ import { map } from 'lodash'
 import { TweenMax } from 'gsap'
 import Masonry from 'react-masonry-component'
 
-import ProjectModal from './../Projects/ProjectModal'
-
 import './style.css'
 
 
@@ -141,14 +139,6 @@ export default class Home extends Component {
               })}
             </Masonry>
           </section>
-
-          <ProjectModal
-            ref='modal'
-            project={currentProject || {}}
-            i={currentIndex}
-            clickNext={this.clickNext.bind(this)}
-            clickPrev={this.clickPrev.bind(this)}
-          />
 
           <section className='view-more-section'>
 
