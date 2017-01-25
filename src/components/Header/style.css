@@ -52,7 +52,7 @@
 
 .menu li {
   display: block;
-  padding: 8vh;
+  padding: 15vh 0 0 0;
 }
 
 .menu li:hover {

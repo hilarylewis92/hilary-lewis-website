@@ -34,9 +34,10 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  margin: auto;
+  margin: 0 auto 100px auto;
   background-color: hsla(0, 0%, 100%, 0);
   text-shadow: 2px 2px #EFF0F4;
+  opacity: 0;
 }
 
 

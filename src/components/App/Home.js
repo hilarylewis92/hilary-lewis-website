@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 import { map } from 'lodash'
-import { TweenMax } from 'gsap'
+import { TweenLite } from 'gsap'
 import Masonry from 'react-masonry-component'
 
 import './style.css'
@@ -44,8 +44,8 @@ export default class Home extends Component {
   }
 
   gsapHeroAnimation() {
-    TweenMax.to('.hero-text-landing', 1.5,
-    {top: 220}
+    TweenLite.to('.hero-text-landing', 1.5,
+    {top:220, opacity:1, lazy:true}
     )
   }
 
@@ -104,10 +104,9 @@ export default class Home extends Component {
             <br />
             Denver, Colorado
           </section>
-
         </section>
 
-        <section className='recent-projects-section'>
+        <section className='recent-projects-section' id='projects'>
           <h3 className='recent-projects-title'>
             Most Recent Projects
           </h3>
