@@ -28,13 +28,15 @@
   height: 250px;
   border-radius: 50%;
   box-shadow: 0 0 10px #D3D6DB;
+  opacity: 0;
 }
 
 /*about summary*/
 .about-me {
   text-align: left;
   width: 70%;
-  margin: auto;
+  margin: 100px auto;
+  opacity: 0;
 }
 
 @media (max-width: 700px) {

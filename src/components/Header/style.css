@@ -22,6 +22,15 @@
 }
 
 /*dropdown*/
+.Dropdown {
+  width: 100vw;
+  float: right;
+  height: 100vh;
+  font-size: 50px;
+  background: #EFF0F4;
+  opacity: 0;
+}
+
 .hamburger-menu {
   z-index: 1000000;
   margin: 20px;
@@ -37,30 +46,20 @@
 
 .menu {
   position: fixed;
-  z-index: 1000000;
+  z-index: 100;
   font-size: 25px;
-  width: 100%;
   text-align: center;
   top: 0;
-  margin: 45px 0px;
-  box-shadow: 0 0 10px #D3D6DB;
 }
 
 .menu li {
   display: block;
-  padding: 15px 0 15px 0;
-  border: #D3D6DB 1px solid;
+  padding: 15vh 0 0 0;
+  background: #EFF0F4;
 }
 
 .menu li:hover {
   cursor: pointer;
-  display: block;
-  background: #D3D6DB;
-  padding: 15px 0 15px 0;
-  border: #EFF0F4 1px solid;
-}
-
-.menu a:hover{
-  color: white;
-  cursor: pointer;
+  color: #233B6E;
+  transition-duration: 0.5s;
 }

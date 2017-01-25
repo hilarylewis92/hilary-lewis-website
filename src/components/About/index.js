@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 import { map } from 'lodash'
+import { TweenLite, Linear } from 'gsap'
 
 import './style.css'
 import Header from '../Header'
@@ -39,6 +40,19 @@ export default class About extends Component {
         }
       ]
     }
+  }
+
+  componentDidMount() {
+    this.gsapImageAnimation()
+  }
+
+  gsapImageAnimation() {
+    TweenLite.to('.hilary-lewis-image', 1,
+    {opacity:1, delay:1, ease:Linear.easeNone}
+    )
+    TweenLite.to('.about-me', 1,
+    {margin:"0px auto", opacity:1}
+    )
   }
 
   render() {
