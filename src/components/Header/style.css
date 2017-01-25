@@ -27,6 +27,8 @@
   float: right;
   height: 100vh;
   font-size: 50px;
+  background: #EFF0F4;
+  opacity: 0;
 }
 
 .hamburger-menu {
@@ -53,6 +55,7 @@
 .menu li {
   display: block;
   padding: 15vh 0 0 0;
+  background: #EFF0F4;
 }
 
 .menu li:hover {

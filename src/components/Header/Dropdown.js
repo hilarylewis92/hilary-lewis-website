@@ -2,8 +2,21 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 
 import './style.css';
+import { TweenLite, Linear } from 'gsap'
 
 export default class Dropdown extends Component {
+
+  componentDidMount() {
+    this.gsapHeroAnimation()
+  }
+
+  gsapHeroAnimation() {
+    TweenLite.to('.Dropdown', 1,
+    {opacity:1, ease:Linear.easeNone}
+    )
+
+  }
+
   render() {
     return (
       <div role="nav" className='Dropdown'>
