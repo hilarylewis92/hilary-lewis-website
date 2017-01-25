@@ -1,78 +1,25 @@
 import React, { Component } from 'react'
+import ProjectsList from './ProjectsList.js'
 
 export default class Project extends Component {
-
-  onCheckedSubmit(e) {
-    const { i } = this.props
-    e.preventDefault()
-    this.props.addCount(i)
+  constructor() {
+    super()
+    this.state = {
+      index: 0
+    }
   }
 
-  clickPrevFun () {
-    const { i, project } = this.props
-    this.props.clickPrev(i, project)
+  componentDidMount() {
+    this.setState({
+      index: this.props.params.id
+    })
   }
-
-  clickNextFun () {
-    const { i, project } = this.props
-    this.props.clickNext(i, project)
-  }
-
+  
   render() {
-    const { project } = this.props.params
-    console.log(this.props.params);
+    const { index } = this.state
     return (
-      <div
-        hidden='true'>
-
-        <div className='arrow-container'>
-
-          <button
-            className='arrows left-arrow'
-            onClick={(e) => this.clickPrevFun(e)}
-          > {'<'}
-          </button>
-
-          <button
-            className='arrows right-arrow'
-            onClick={(e) => this.clickNextFun(e)}
-          > {'>'}
-          </button>
-
-        </div>
-
-        <a
-          href={project.url}
-          target='_blank'>
-          <img
-            className='project-modal-image'
-            src={require(project.src)}
-            role='none'
-          />
-        </a>
-
-        <h3
-          className='project-title'>
-          {project.title}
-        </h3>
-
-        <p
-          className='projects-description'>
-          {project.description}
-        </p>
-        <br />
-        <a
-          href={project.url}
-          target='_blank'>
-          View application
-        </a>
-        <br />
-        <a
-          className='project-github'
-          href={project.github}
-          target='_blank'>
-          View code
-        </a>
+      <div>
+        <h1>{ProjectsList[index].title}</h1>
       </div>
     )
   }
