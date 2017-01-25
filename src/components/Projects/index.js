@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Masonry from 'react-masonry-component'
 import { Link } from 'react-router'
+import { TweenLite, Linear } from 'gsap'
 
 import './style.css';
 import Header from '../Header'
@@ -72,6 +73,16 @@ export default class Projects extends Component {
       ],
       currentIndex: 0,
     }
+  }
+
+  componentDidMount() {
+    this.gsapProjectsAnimation()
+  }
+
+  gsapProjectsAnimation() {
+    TweenLite.to('.Projects', 1.5,
+    {opacity:1, ease:Linear.easeNone}
+    )
   }
 
   clickPrev(i) {

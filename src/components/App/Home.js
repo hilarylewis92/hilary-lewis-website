@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 import { map } from 'lodash'
-import { TweenLite } from 'gsap'
+import { TweenLite, Linear } from 'gsap'
 import Masonry from 'react-masonry-component'
 
 import './style.css'
@@ -46,6 +46,9 @@ export default class Home extends Component {
   gsapHeroAnimation() {
     TweenLite.to('.hero-text-landing', 1.5,
     {top:220, opacity:1, lazy:true}
+    )
+    TweenLite.to('.recent-projects-section', 1.5,
+    {opacity:1, delay:1, ease:Linear.easeNone}
     )
   }
 

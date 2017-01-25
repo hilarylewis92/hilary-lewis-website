@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { TweenLite, Linear } from 'gsap'
 
 import Header from '../Header'
 import Footer from '../Footer'
@@ -6,6 +7,17 @@ import Footer from '../Footer'
 import './style.css';
 
 export default class Contact extends Component {
+
+  componentDidMount() {
+    this.gsapProjectsAnimation()
+  }
+
+  gsapProjectsAnimation() {
+    TweenLite.to('.contact-section', 1.5,
+    {opacity:1, ease:Linear.easeNone}
+    )
+  }
+
   render() {
     return (
       <div className='Contact'>
