@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -11,7 +11,7 @@
 /*hero*/
 .hero-background-image {
   height: 100vh;
-  background: linear-gradient(to top, transparent 0%, white 250%), url('background.jpg');
+  /*background: linear-gradient(to top, transparent 0%, white 250%), url('background.jpg');*/
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,17 +27,20 @@
 }
 
 .hero-text-landing {
-  text-align: center;
+  text-align: left;
   line-height: 120%;
-  color: black;
+  color: gray;
   font-size: 60px;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  margin: 0 auto 100px auto;
-  background-color: hsla(0, 0%, 100%, 0);
+  width: 85%;
+  margin: 0px 50px;
   text-shadow: 2px 2px #EFF0F4;
   opacity: 0;
+}
+
+.front-end {
+  color: black;
 }
 
 

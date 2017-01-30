@@ -45,7 +45,7 @@ export default class Home extends Component {
 
   gsapHeroAnimation() {
     TweenLite.to('.hero-text-landing', 1.5,
-    {top:220, opacity:1, lazy:true}
+    {top:180, opacity:1, lazy:true}
     )
     TweenLite.to('.recent-projects-section', 1.5,
     {opacity:1, delay:1, ease:Linear.easeNone}
@@ -99,13 +99,17 @@ export default class Home extends Component {
         <section className='hero-background-image'>
 
           <section className='hero-text-landing'>
-
-            <div className='name'>
-              HILARY LEWIS
-            </div>
-            Front-End Developer
+            <span> Hilary Lewis.</span>
             <br />
-            Denver, Colorado
+            <span> Mathematical.</span>
+            <span> Creative.</span>
+            <br />
+            <span> Teacher.</span>
+            <span> Learner.</span>
+            <br />
+            <span className='front-end'> Front End Developer.</span>
+            <br />
+            <span> Denver, Colorado.</span>
           </section>
         </section>
 
