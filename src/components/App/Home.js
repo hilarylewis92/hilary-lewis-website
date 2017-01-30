@@ -112,51 +112,55 @@ export default class Home extends Component {
             <span> Denver, Colorado.</span>
           </section>
         </section>
-
-        <section className='recent-projects-section' id='projects'>
-          <h3 className='recent-projects-title'>
-            Most Recent Projects
-          </h3>
-
-          <section className='recent-projects-list'>
-
-            <Masonry
-              className={'projects-list'}
-              elementType={'ul'}
-              options={masonryOptions}
-              disableImagesLoaded={false}
-              updateOnEachImageLoad={false}>
-
-              {recent.map((project, i) => {
-                return(
-                  <li
-                    className='single-project'
-                    key={i}
-                    onClick={() => this.grabProject(i)}>
-
-                    <img
-                      className='project-image'
-                      src={require(project.src)}
-                      role='none'
-                    />
-
-                </li>
-                )
-              })}
-            </Masonry>
-          </section>
-
-          <section className='view-more-section'>
-
-            <Link
-              to='/projects'
-              className='view-more-projects button'>
-              View More Projects &rarr;
-            </Link>
-
-          </section>
-        </section>
       </div>
     );
   }
 }
+
+
+
+// <section className='recent-projects-section' id='projects'>
+//   <h3 className='recent-projects-title'>
+//     Most Recent Projects
+//   </h3>
+
+
+// <section className='recent-projects-list'>
+//
+//   <Masonry
+//     className={'projects-list'}
+//     elementType={'ul'}
+//     options={masonryOptions}
+//     disableImagesLoaded={false}
+//     updateOnEachImageLoad={false}>
+//
+//     {recent.map((project, i) => {
+//       return(
+//         <li
+//           className='single-project'
+//           key={i}
+//           onClick={() => this.grabProject(i)}>
+//
+//           <img
+//             className='project-image'
+//             src={require(project.src)}
+//             role='none'
+//             />
+//
+//         </li>
+//       )
+//     })}
+//   </Masonry>
+// </section>
+
+// <section className='view-more-section'>
+//
+//   <Link
+//     to='/projects'
+//     className='view-more-projects button'>
+//     View More Projects &rarr;
+//   </Link>
+//
+// </section>
+
+// </section>
