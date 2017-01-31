@@ -1,10 +1,10 @@
 .Footer {
   font-family: 'Quicksand', sans-serif;
-  height: 130px;
+  height: 80px;
   width: 100vw;
   text-align: center;
   background-color: #EFF0F4;
-  margin-top: 150px;
+  display: absolute;
 }
 
 .single-contact {
@@ -12,15 +12,9 @@
   margin: 20px;
 }
 
-@media (max-width: 700px) {
-  .single-contact {
-    margin: 20px 0 20px 0;
-  }
-}
-
 .mail {
-  width: 88px;
-  height: 88px;
+  width: 40px;
+  height: 40px;
   display: block;
   background: url('./images/mail.png') no-repeat;
 }
@@ -30,8 +24,8 @@
 }
 
 .linkedin {
-  width: 88px;
-  height: 88px;
+  width: 40px;
+  height: 40px;
   display:block;
   background: url('./images/linkedin.png') no-repeat;
 }
@@ -41,8 +35,8 @@
 }
 
 .github {
-  width: 88px;
-  height: 88px;
+  width: 40px;
+  height: 40px;
   display:block;
   background: url('./images/github.png') no-repeat;
 }
@@ -52,8 +46,8 @@
 }
 
 .twitter {
-  width: 88px;
-  height: 88px;
+  width: 40px;
+  height: 40px;
   display:block;
   background: url('./images/twitter.png') no-repeat;
 }

@@ -1,78 +1,92 @@
 import React, { Component } from 'react'
+import { TweenLite, Linear } from 'gsap'
+import { Link } from 'react-router'
+
+import ProjectsList from './ProjectsList.js'
+import Footer from '../Footer'
+import Header from '../Header'
+
 
 export default class Project extends Component {
-
-  onCheckedSubmit(e) {
-    const { i } = this.props
-    e.preventDefault()
-    this.props.addCount(i)
+  constructor() {
+    super()
+    this.state = {
+      index: 0
+    }
   }
 
-  clickPrevFun () {
-    const { i, project } = this.props
-    this.props.clickPrev(i, project)
+  componentDidMount() {
+    this.setState({
+      index: this.props.params.id
+    })
+    this.gsapProjectsAnimation()
   }
 
-  clickNextFun () {
-    const { i, project } = this.props
-    this.props.clickNext(i, project)
+  gsapProjectsAnimation() {
+    TweenLite.to('.individual-project', 1.5,
+      {
+        opacity:1,
+        // ease:Linear.easeNone
+      }
+    )
   }
 
   render() {
-    const { project } = this.props.params
-    console.log(this.props.params);
+    const { index } = this.state
     return (
-      <div
-        hidden='true'>
-
-        <div className='arrow-container'>
-
-          <button
-            className='arrows left-arrow'
-            onClick={(e) => this.clickPrevFun(e)}
-          > {'<'}
-          </button>
-
-          <button
-            className='arrows right-arrow'
-            onClick={(e) => this.clickNextFun(e)}
-          > {'>'}
-          </button>
-
+      <div>
+        <div className="header">
+          <Header />
         </div>
+        <section className='individual-project'>
+          <section className='project-left'>
+            <img
+              className='individual-project-image'
+              src={require(ProjectsList[index].src)}
+              role='none'
+              />
 
-        <a
-          href={project.url}
-          target='_blank'>
-          <img
-            className='project-modal-image'
-            src={require(project.src)}
-            role='none'
-          />
-        </a>
+            <a
+              className='project-url'
+              href={ProjectsList[index].url}
+              >
+              View application
+            </a>
 
-        <h3
-          className='project-title'>
-          {project.title}
-        </h3>
+            <a
+              className='project-github'
+              href={ProjectsList[index].github}>
+              View code
+            </a>
+          </section>
 
-        <p
-          className='projects-description'>
-          {project.description}
-        </p>
-        <br />
-        <a
-          href={project.url}
-          target='_blank'>
-          View application
-        </a>
-        <br />
-        <a
-          className='project-github'
-          href={project.github}
-          target='_blank'>
-          View code
-        </a>
+          <section
+            className='project-right'>
+            <h1
+              className='project-title'>
+              {ProjectsList[index].title}
+            </h1>
+
+            <p
+              className='project-description'>
+              {ProjectsList[index].description}
+            </p>
+          </section>
+
+          <section className='project-button-section'>
+            <Link
+              to='/projects'
+              className='project-link button'>
+               &larr; Back to Projects
+            </Link>
+          </section>
+        </section>
+
+
+        <section className='footer-section'>
+          <Footer />
+        </section>
+
       </div>
     )
   }

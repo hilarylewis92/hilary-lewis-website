@@ -14,7 +14,6 @@ export default class Dropdown extends Component {
     TweenLite.to('.Dropdown', 1,
     {opacity:1, ease:Linear.easeNone}
     )
-
   }
 
   render() {

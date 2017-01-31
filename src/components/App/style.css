@@ -1,5 +1,5 @@
 .App {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -11,77 +11,41 @@
 /*hero*/
 .hero-background-image {
   height: 100vh;
-  background: linear-gradient(to top, transparent 0%, white 250%), url('background.jpg');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.name {
-  text-align: center;
-  font-size: 80px;
-  margin-bottom: 15px;
-  background-color: hsla(0, 0%, 100%, 0);
-  text-shadow: 4px 4px #EFF0F4;
 }
 
 .hero-text-landing {
-  text-align: center;
+  text-align: left;
   line-height: 120%;
-  color: black;
+  color: #D3D6DB;
   font-size: 60px;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  margin: 0 auto 100px auto;
-  background-color: hsla(0, 0%, 100%, 0);
+  width: 85%;
+  margin: 0px 50px;
   text-shadow: 2px 2px #EFF0F4;
   opacity: 0;
 }
 
-
-@media (max-width: 620px) {
-  .name {
-    font-size: 50px;
-  }
-  .hero-text-landing {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 375px) {
-  .name {
-    font-size: 40px;
-  }
-  .hero-text-landing {
-    font-size: 25px;
-  }
-}
-
-/*recent projects*/
-.recent-projects-section {
-  margin-top: 10vh;
-  opacity: 0;
-}
-
-.recent-projects-title {
-  text-align: center;
-  font-size: 55px;
-  margin: 30px;
-  padding: 20px;
+.front-end {
   color: #233B6E;
+  text-shadow: 2px 2px #D3D6DB;
 }
 
-@media (max-width: 650px) {
-  .recent-projects-title {
+@media (max-width: 800px) {
+  .hero-text-landing {
+    width: 100%;
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text-landing {
     font-size: 35px;
   }
 }
 
-/*view more button*/
-.view-more-section {
-  margin: 55px;
-  position: relative;
-  text-align: center;
+@media (max-width: 450px) {
+  .hero-text-landing {
+    font-size: 30px;
+  }
 }

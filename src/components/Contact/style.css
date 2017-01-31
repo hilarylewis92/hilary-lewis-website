@@ -7,16 +7,17 @@
 }
 
 .contact-section {
-  height: 40vh;
+  height: 70vh;
   font-size: 25px;
   width: 75%;
-  margin: 140px auto;
+  margin: 150px auto 0 auto;
   opacity: 0;
 }
 
 .contact-title {
   margin: 50px;
   font-size: 55px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 .contact-email {

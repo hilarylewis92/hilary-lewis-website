@@ -45,7 +45,7 @@ export default class Home extends Component {
 
   gsapHeroAnimation() {
     TweenLite.to('.hero-text-landing', 1.5,
-    {top:220, opacity:1, lazy:true}
+    {top:180, opacity:1, lazy:true}
     )
     TweenLite.to('.recent-projects-section', 1.5,
     {opacity:1, delay:1, ease:Linear.easeNone}
@@ -99,60 +99,68 @@ export default class Home extends Component {
         <section className='hero-background-image'>
 
           <section className='hero-text-landing'>
-
-            <div className='name'>
-              HILARY LEWIS
-            </div>
-            Front-End Developer
+            <span> Hilary Lewis.</span>
             <br />
-            Denver, Colorado
-          </section>
-        </section>
-
-        <section className='recent-projects-section' id='projects'>
-          <h3 className='recent-projects-title'>
-            Most Recent Projects
-          </h3>
-
-          <section className='recent-projects-list'>
-
-            <Masonry
-              className={'projects-list'}
-              elementType={'ul'}
-              options={masonryOptions}
-              disableImagesLoaded={false}
-              updateOnEachImageLoad={false}>
-
-              {recent.map((project, i) => {
-                return(
-                  <li
-                    className='single-project'
-                    key={i}
-                    onClick={() => this.grabProject(i)}>
-
-                    <img
-                      className='project-image'
-                      src={require(project.src)}
-                      role='none'
-                    />
-
-                </li>
-                )
-              })}
-            </Masonry>
-          </section>
-
-          <section className='view-more-section'>
-
-            <Link
-              to='/projects'
-              className='view-more-projects button'>
-              View More Projects &rarr;
-            </Link>
-
+            <span> Mathematical.</span>
+            <span> Creative.</span>
+            <br />
+            <span> Teacher.</span>
+            <span> Learner.</span>
+            <br />
+            <span className='front-end'> Front End Developer.</span>
+            <br />
+            <span> Denver, Colorado.</span>
           </section>
         </section>
       </div>
     );
   }
 }
+
+
+
+// <section className='recent-projects-section' id='projects'>
+//   <h3 className='recent-projects-title'>
+//     Most Recent Projects
+//   </h3>
+
+
+// <section className='recent-projects-list'>
+//
+//   <Masonry
+//     className={'projects-list'}
+//     elementType={'ul'}
+//     options={masonryOptions}
+//     disableImagesLoaded={false}
+//     updateOnEachImageLoad={false}>
+//
+//     {recent.map((project, i) => {
+//       return(
+//         <li
+//           className='single-project'
+//           key={i}
+//           onClick={() => this.grabProject(i)}>
+//
+//           <img
+//             className='project-image'
+//             src={require(project.src)}
+//             role='none'
+//             />
+//
+//         </li>
+//       )
+//     })}
+//   </Masonry>
+// </section>
+
+// <section className='view-more-section'>
+//
+//   <Link
+//     to='/projects'
+//     className='view-more-projects button'>
+//     View More Projects &rarr;
+//   </Link>
+//
+// </section>
+
+// </section>

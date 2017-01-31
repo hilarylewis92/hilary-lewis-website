@@ -3,18 +3,21 @@
   letter-spacing: 2px;
   color: #233B6E;
   text-align: center;
+  margin: 50px;
   opacity: 0;
 }
 
+/*list of projects*/
 .projects-title {
-  margin: 80px 0 60px 0;
+  margin: 70px 0 50px 0;
   font-size: 55px;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
-/*list of projects*/
 .projects-list {
   width: 90vw;
   margin: auto;
+  height: 100%;
 }
 
 /*single projects*/
@@ -63,20 +66,93 @@
   width: 100%;
 }
 
-/*modal*/
-
-.modal-card {
-  line-height: 170%;
-  height: 90vh;
-  font-family: 'Quicksand', sans-serif;
-  letter-spacing: 2px;
-  color: #233B6E;
-  border-radius: 5px;
-  overflow-y: auto;
-  padding: 20px;
+/*individual project*/
+.individual-project {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 }
 
-.arrows {
+.project-left {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  height: 100vh;
+}
+
+.individual-project-image {
+  width: 80%;
+  margin: 100px 55px 20px 55px;
+  border: 5px solid #D3D6DB;
+}
+
+.project-right {
+  letter-spacing: 2px;
+  color: #233B6E;
+  font-size: 20px;
+  line-height: 170%;
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+}
+
+.project-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 40px;
+  line-height: 110%;
+  padding: 95px 0 0 0;
+}
+
+.project-description {
+  padding: 20px;
+  height: 100%;
+}
+
+.project-url, .project-github {
+  font-family: 'Quicksand', sans-serif;
+  display: block;
+  letter-spacing: 2px;
+  font-size: 20px;
+  height: 40px;
+  width: 100%;
+  margin-left: 55px;
+}
+
+.project-button-section{
+  width: 100%;
+  margin-top: 30px;
+  height: 15vh;
+  text-align: center;
+  display: block;
+}
+
+.project-link {
+  font-family: 'Quicksand', sans-serif;
+  margin: -40px;
+}
+
+
+
+@media (max-width: 915px) {
+  .project-left {
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+  .project-right {
+    height: 100%;
+    margin: 30px;
+  }
+  .project-title {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+  }
+  .project-description {
+    font-size: 15px;
+  }
+}
+
+/*.arrows {
   position: absolute;
   z-index: 100000;
   border: none;
@@ -99,31 +175,4 @@
 
 .right-arrow {
   right: 0;
-}
-
-.project-title {
-  margin: 10px;
-  font-size: 35px;
-  line-height: 120%;
-  text-align: center;
-}
-
-.project-modal-image {
-  border-radius: 5px 5px 0 0;
-  width: 100%;
-  transition-duration: 0.5s;
-}
-
-.project-modal-image:hover {
-  box-shadow: 0 0 5px black;
-  transition-duration: 0.5s;
-}
-
-.project-description p {
-  font-size: 15px;
-}
-
-.project-github {
-  position: relative;
-  line-height: 400%;
-}
+}*/
