@@ -26,7 +26,7 @@ export default class Project extends Component {
     TweenLite.to('.individual-project', 1.5,
       {
         opacity:1,
-        // ease:Linear.easeNone
+        ease:Linear.easeNone
       }
     )
   }
@@ -49,13 +49,14 @@ export default class Project extends Component {
             <a
               className='project-url'
               href={ProjectsList[index].url}
-              >
+              target='_blank'>
               View application
             </a>
 
             <a
               className='project-github'
-              href={ProjectsList[index].github}>
+              href={ProjectsList[index].github}
+              target='_blank'>
               View code
             </a>
           </section>
