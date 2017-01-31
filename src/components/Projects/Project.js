@@ -22,35 +22,45 @@ export default class Project extends Component {
   render() {
     const { index } = this.state
     return (
-      <div className='individual-project'>
+      <div>
         <div className="header">
           <Header />
         </div>
+        <section className='individual-project'>
+          <section className='project-left'>
+            <img
+              className='individual-project-image'
+              src={require(ProjectsList[index].src)}
+              role='none'
+              />
+          </section>
 
-        <h1>
-          {ProjectsList[index].title}
-        </h1>
+          <section
+            className='project-right'>
+            <h1
+              className='project-title'>
+              {ProjectsList[index].title}
+            </h1>
 
-        <img
-          className='project-image'
-          src={require(ProjectsList[index].src)}
-          role='none'
-        />
+            <p
+              className='project-description'>
+              {ProjectsList[index].description}
+            </p>
 
-        <p>
-          {ProjectsList[index].description}
-        </p>
+            <a
+              className='project-url'
+              href={ProjectsList[index].url}
+              >
+              View application
+            </a>
 
-        <a
-          href={ProjectsList[index].url}
-          >
-          {ProjectsList[index].url}
-        </a>
-
-        <a
-          href={ProjectsList[index].github}>
-          {ProjectsList[index].github}
-        </a>
+            <a
+              className='project-github'
+              href={ProjectsList[index].github}>
+              View code
+            </a>
+          </section>
+        </section>
 
         <section className='footer-section'>
           <Footer />

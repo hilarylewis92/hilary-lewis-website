@@ -7,13 +7,13 @@
   opacity: 0;
 }
 
+/*list of projects*/
 .projects-title {
-  margin: 80px 0 60px 0;
+  margin: 70px 0 50px 0;
   font-size: 55px;
   font-family: 'Nunito Sans', sans-serif;
 }
 
-/*list of projects*/
 .projects-list {
   width: 90vw;
   margin: auto;
@@ -66,20 +66,57 @@
   width: 100%;
 }
 
-/*modal*/
+/*individual project*/
+.individual-project {
+  width: 100%;
+  height: 100vh;
+}
 
-.modal-card {
-  line-height: 170%;
-  height: 90vh;
-  font-family: 'Quicksand', sans-serif;
+.project-left {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  height: 100%;
+}
+
+.individual-project-image{
+  width: 80%;
+  margin: 160px 55px;
+  border: 5px solid #D3D6DB;
+}
+
+.project-right {
   letter-spacing: 2px;
   color: #233B6E;
-  border-radius: 5px;
-  overflow-y: auto;
+  font-size: 20px;
+  line-height: 170%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.project-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 40px;
+  line-height: 110%;
+  padding: 100px 0 0 0;
+}
+
+.project-description {
   padding: 20px;
 }
 
-.arrows {
+.project-url {
+  display: block;
+}
+.project-github {
+
+}
+
+
+
+
+
+
+/*.arrows {
   position: absolute;
   z-index: 100000;
   border: none;
@@ -102,31 +139,4 @@
 
 .right-arrow {
   right: 0;
-}
-
-.project-title {
-  margin: 10px;
-  font-size: 35px;
-  line-height: 120%;
-  text-align: center;
-}
-
-.project-modal-image {
-  border-radius: 5px 5px 0 0;
-  width: 100%;
-  transition-duration: 0.5s;
-}
-
-.project-modal-image:hover {
-  box-shadow: 0 0 5px black;
-  transition-duration: 0.5s;
-}
-
-.project-description p {
-  font-size: 15px;
-}
-
-.project-github {
-  position: relative;
-  line-height: 400%;
-}
+}*/

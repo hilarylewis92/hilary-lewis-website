@@ -1,5 +1,7 @@
 .Header {
-  font-family: 'Quicksand', sans-serif;
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'Nunito Sans', sans-serif;
+
   text-align: right;
   letter-spacing: 2px;
   font-size: 20px;
@@ -36,7 +38,7 @@
   margin: 20px;
   top: 0;
   background: none;
-  /*opacity: 0.5;*/
+  opacity: 0.8;
 }
 
 .hamburger-menu:hover {
