@@ -69,19 +69,20 @@
 /*individual project*/
 .individual-project {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  opacity: 0;
 }
 
 .project-left {
   width: 50%;
   display: inline-block;
   float: left;
-  height: 100%;
+  height: 100vh;
 }
 
-.individual-project-image{
+.individual-project-image {
   width: 80%;
-  margin: 160px 55px;
+  margin: 100px 55px 20px 55px;
   border: 5px solid #D3D6DB;
 }
 
@@ -91,26 +92,43 @@
   font-size: 20px;
   line-height: 170%;
   font-family: 'Quicksand', sans-serif;
+  height: 100vh;
 }
 
 .project-title {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 40px;
   line-height: 110%;
-  padding: 100px 0 0 0;
+  padding: 95px 0 0 0;
 }
 
 .project-description {
   padding: 20px;
+  height: 100%;
 }
 
-.project-url {
+.project-url, .project-github {
+  font-family: 'Quicksand', sans-serif;
+  display: block;
+  letter-spacing: 2px;
+  font-size: 20px;
+  height: 40px;
+  width: 100%;
+  margin-left: 55px;
+}
+
+.project-button-section{
+  width: 100%;
+  margin-top: 30px;
+  height: 15vh;
+  text-align: center;
   display: block;
 }
-.project-github {
 
+.project-link {
+  font-family: 'Quicksand', sans-serif;
+  margin: -40px;
 }
-
 
 
 

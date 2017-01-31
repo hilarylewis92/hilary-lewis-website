@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { TweenLite, Linear } from 'gsap'
+import { Link } from 'react-router'
 
 import ProjectsList from './ProjectsList.js'
 import Footer from '../Footer'
@@ -17,6 +19,16 @@ export default class Project extends Component {
     this.setState({
       index: this.props.params.id
     })
+    this.gsapProjectsAnimation()
+  }
+
+  gsapProjectsAnimation() {
+    TweenLite.to('.individual-project', 1.5,
+      {
+        opacity:1,
+        // ease:Linear.easeNone
+      }
+    )
   }
 
   render() {
@@ -33,19 +45,6 @@ export default class Project extends Component {
               src={require(ProjectsList[index].src)}
               role='none'
               />
-          </section>
-
-          <section
-            className='project-right'>
-            <h1
-              className='project-title'>
-              {ProjectsList[index].title}
-            </h1>
-
-            <p
-              className='project-description'>
-              {ProjectsList[index].description}
-            </p>
 
             <a
               className='project-url'
@@ -60,7 +59,29 @@ export default class Project extends Component {
               View code
             </a>
           </section>
+
+          <section
+            className='project-right'>
+            <h1
+              className='project-title'>
+              {ProjectsList[index].title}
+            </h1>
+
+            <p
+              className='project-description'>
+              {ProjectsList[index].description}
+            </p>
+          </section>
+
+          <section className='project-button-section'>
+            <Link
+              to='/projects'
+              className='project-link button'>
+               &larr; Back to Projects
+            </Link>
+          </section>
         </section>
+
 
         <section className='footer-section'>
           <Footer />

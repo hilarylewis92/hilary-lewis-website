@@ -4,6 +4,7 @@
   width: 100vw;
   text-align: center;
   background-color: #EFF0F4;
+  display: absolute;
 }
 
 .single-contact {
