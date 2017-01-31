@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 
 import './style.css'
-import About from '../About'
 
 export default class Resume extends Component {
   render() {
@@ -14,13 +13,6 @@ export default class Resume extends Component {
           height="1100"
           seamless>
         </iframe>
-
-        <section className='view-about-section'>
-          <Link to='/about'
-            className='back button'>
-            &larr; Back to About
-          </Link>
-        </section>
       </div>
     )
   }

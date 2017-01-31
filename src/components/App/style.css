@@ -33,39 +33,19 @@
 
 @media (max-width: 800px) {
   .hero-text-landing {
-    font-size: 35px;
+    width: 100%;
+    font-size: 45px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .hero-text-landing {
-    font-size: 25px;
-  }
-}
-
-/*recent projects*/
-/*.recent-projects-section {
-  margin-top: 10vh;
-  opacity: 0;
-}
-
-.recent-projects-title {
-  text-align: center;
-  font-size: 55px;
-  margin: 30px;
-  padding: 20px;
-  color: #233B6E;
-}
-
-@media (max-width: 650px) {
-  .recent-projects-title {
     font-size: 35px;
   }
-}*/
+}
 
-/*view more button*/
-/*.view-more-section {
-  margin: 55px;
-  position: relative;
-  text-align: center;
-}*/
+@media (max-width: 450px) {
+  .hero-text-landing {
+    font-size: 30px;
+  }
+}

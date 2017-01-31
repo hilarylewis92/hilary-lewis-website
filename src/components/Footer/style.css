@@ -4,19 +4,12 @@
   width: 100vw;
   text-align: center;
   background-color: #EFF0F4;
-  /*margin-top: 150px;*/
 }
 
 .single-contact {
   display: inline-block;
   margin: 20px;
 }
-
-/*@media (max-width: 700px) {
-  .single-contact {
-    margin: 20px 0 20px 0;
-  }
-}*/
 
 .mail {
   width: 40px;

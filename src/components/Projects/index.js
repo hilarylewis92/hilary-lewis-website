@@ -51,12 +51,12 @@ export default class Projects extends Component {
 
             {ProjectsList.map((project, i) => {
               return(
-                <Link
-                  to={`/projects/${project.id}`}
-                  >
-                  <li
-                    className='single-project'
-                    key={project.id}>
+                <li
+                  className='single-project'
+                  key={project.id}>
+                  <Link
+                    to={`/projects/${project.id}`}
+                    >
 
                     <img
                       className='project-image'
@@ -64,8 +64,8 @@ export default class Projects extends Component {
                       role='none'
                     />
 
-                  </li>
-              </Link>
+                </Link>
+              </li>
               )
             })}
           </Masonry>
